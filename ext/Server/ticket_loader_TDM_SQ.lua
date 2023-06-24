@@ -57,28 +57,34 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_TDM_SQ, p_GameMode_
 
 -- ------------------------------------------------------------------------------
 
--- Calculating the ticketrate vs actual tickets
--- TDM Squad Deathmatch: ticket rate 100% = 50 kills - divider = *2
-
--- ------------------------------------------------------------------------------
-
 	if (TDM_SQ_LevelNameMap[p_LevelName_TDM_SQ] ~= nill) then
--- TDM_SQ modes: Here u can set the server tickets for TDM Close Quarters maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="TDM_SQ"
 
 	map_tickets_00_04_TDM_SQ = var_00_04_TDM_SQ
-	map_tickets_05_10_TDM_SQ = var_05_10_TDM_SQ
-	map_tickets_11_20_TDM_SQ = var_11_20_TDM_SQ
+	map_tickets_05_12_TDM_SQ = var_05_12_TDM_SQ
+	map_tickets_13_24_TDM_SQ = var_13_24_TDM_SQ
+	map_tickets_25_32_TDM_SQ = var_25_32_TDM_SQ
+	map_tickets_33_48_TDM_SQ = var_33_48_TDM_SQ
+	map_tickets_49_64_TDM_SQ = var_49_64_TDM_SQ
+	map_tickets_65_128_TDM_SQ = var_65_128_TDM_SQ
 
 	map_tickets_00_04 = map_tickets_00_04_TDM_SQ
-	map_tickets_05_10 = map_tickets_05_10_TDM_SQ
-	map_tickets_11_20 = map_tickets_11_20_TDM_SQ
+	map_tickets_05_12 = map_tickets_05_12_TDM_SQ
+	map_tickets_13_24 = map_tickets_13_24_TDM_SQ
+	map_tickets_25_32 = map_tickets_25_32_TDM_SQ
+	map_tickets_33_48 = map_tickets_33_48_TDM_SQ
+	map_tickets_49_64 = map_tickets_49_64_TDM_SQ
+	map_tickets_65_128 = map_tickets_65_128_TDM_SQ
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_TDM_SQ*2) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_TDM_SQ*2) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_TDM_SQ*2) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_TDM_SQ*2)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_TDM_SQ*2)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_TDM_SQ*2)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_TDM_SQ*2)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_TDM_SQ*2)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_TDM_SQ*2)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_TDM_SQ*2) 
 
 end
 
@@ -105,36 +111,63 @@ end
 
 	print(''..s_MapData..': - Setting Rcondata')
 	print(''..s_MapData..': - Gamemode: ('..s_GameMode_TDM_SQ..') - Mapname: ('..s_LevelName_TDM_SQ..') ') 
-	print(''..s_MapData..': - Setting map tickets: '..map_tickets_00_04..' - '..map_tickets_05_10..' - '..map_tickets_11_20..'') 
-	print(''..s_MapData..': - GameMode Counter data '..s_ticket_gmc_00_04..'% - '..s_ticket_gmc_05_10..'% - '..s_ticket_gmc_11_20..'%') 
+	print(''..s_MapData..': - Setting map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
+	print(''..s_MapData..': - GameMode Counter data '..s_ticket_gmc_00_04..'% - '..s_ticket_gmc_05_12..'% - '..s_ticket_gmc_13_24..'% - '..s_ticket_gmc_25_32..'% - '..s_ticket_gmc_33_48..'% - '..s_ticket_gmc_49_64..'% - '..s_ticket_gmc_65_128..'% ') 
 	print(''..s_MapData..': - Vehicles are '..s_vehicles_status..' ') 
 	print(''..s_MapData..': - Setting server tickets and GameMode Counter') 
 
 -- ------------------------------------------------------------------------------
 
-    local players = PlayerManager:GetPlayerCount()
-    if players <= 4 then
+	local players = PlayerManager:GetPlayerCount()
+	if players <= 4 then
 
 	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_00_04) }) 
 	RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
 	print(''..s_MapData..': - tickets set to '..map_tickets_00_04..' - GameMode Counter '..s_ticket_gmc_00_04..'%')
 	print(''..s_MapData..': - All presets loaded')  
        
-    elseif players >= 5 and players <= 10 then
+	elseif players >= 5 and players <= 12 then
 
-	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_05_10) }) 
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_05_12) }) 
         RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
-	print(''..s_MapData..': - tickets set to '..map_tickets_05_10..' - GameMode Counter '..s_ticket_gmc_05_10..'%')
+	print(''..s_MapData..': - tickets set to '..map_tickets_05_12..' - GameMode Counter '..s_ticket_gmc_05_12..'%')
 	print(''..s_MapData..': - All presets loaded')  
       
-    elseif players >= 11 and players <= 20 then
+	elseif players >= 13 and players <= 24 then
 
-	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_11_20) }) 
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_13_24) }) 
         RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
-	print(''..s_MapData..': - tickets set to '..map_tickets_11_20..' - GameMode Counter '..s_ticket_gmc_11_20..'%')
+	print(''..s_MapData..': - tickets set to '..map_tickets_13_24..' - GameMode Counter '..s_ticket_gmc_13_24..'%')
 	print(''..s_MapData..': - All presets loaded')  
-	end
+--
+	elseif players >= 25 and players <= 32 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_25_32) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_25_32..' - GameMode Counter '..s_ticket_gmc_25_32..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 33 and players <= 48 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_33_48) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_33_48..' - GameMode Counter '..s_ticket_gmc_33_48..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 49 and players <= 64 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_49_64) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_49_64..' - GameMode Counter '..s_ticket_gmc_49_64..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 65 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_65_128) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_65_128..' - GameMode Counter '..s_ticket_gmc_65_128..'%')
+	print(''..s_MapData..': - All presets loaded')  
 
 end
+end
 end)
-

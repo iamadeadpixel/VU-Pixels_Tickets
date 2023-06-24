@@ -80,112 +80,159 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_CQS, p_GameMode_CQS
 	local d_LevelName = ServerUtils and ServerUtils:GetCustomMapName() or CQS_Disabled_LevelNameMap[p_LevelName_CQS]
 
 -- ------------------------------------------------------------------------------
--- Calculating the ticketrate vs actual tickets
--- CQS350: ticket rate 100% = 350 Tickets - divider = 3.5
--- CQS300: ticket rate 100% = 300 Tickets - divider = 3
--- CQS250: ticket rate 100% = 250 Tickets - divider = 2.5
--- CQS200: ticket rate 100% = 200 Tickets - divider = 2
--- CQS150: ticket rate 100% = 150 Tickets - divider = 1.5
-
--- ------------------------------------------------------------------------------
 
  	if (CQS350_LevelNameMap[p_LevelName_CQS] ~= nill) then
--- Conques modes: Here u can set the server tickets for Conquest Small CQS350 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="CQS350"
 
-	map_tickets_00_04_CQS350 = 350
-	map_tickets_05_10_CQS350 = 350
-	map_tickets_11_20_CQS350 = 350
+	map_tickets_00_04_CQS350 = var_00_04_CQS350
+	map_tickets_05_12_CQS350 = var_05_12_CQS350
+	map_tickets_13_24_CQS350 = var_13_24_CQS350
+	map_tickets_25_32_CQS350 = var_25_32_CQS350
+	map_tickets_33_48_CQS350 = var_33_48_CQS350
+	map_tickets_49_64_CQS350 = var_49_64_CQS350
+	map_tickets_65_128_CQS350 = var_65_128_CQS350
 
 	map_tickets_00_04 = map_tickets_00_04_CQS350
-	map_tickets_05_10 = map_tickets_05_10_CQS350
-	map_tickets_11_20 = map_tickets_11_20_CQS350
+	map_tickets_05_12 = map_tickets_05_12_CQS350
+	map_tickets_13_24 = map_tickets_13_24_CQS350
+	map_tickets_25_32 = map_tickets_25_32_CQS350
+	map_tickets_33_48 = map_tickets_33_48_CQS350
+	map_tickets_49_64 = map_tickets_49_64_CQS350
+	map_tickets_65_128 = map_tickets_65_128_CQS350
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS350/3.5) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_CQS350/3.5) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_CQS350/3.5) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS350/3.5)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_CQS350/3.5)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_CQS350/3.5)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_CQS350/3.5)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_CQS350/3.5)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_CQS350/3.5)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_CQS350/3.5)
 
 -- ------------------------------------------------------------------------------
 
  	elseif (CQS300_LevelNameMap[p_LevelName_CQS] ~= nill) then
--- Conques modes: Here u can set the server tickets for Conquest Small CQS300 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="CQS300"
  
 	map_tickets_00_04_CQS300 = var_00_04_CQS300
-	map_tickets_05_10_CQS300 = var_05_10_CQS300
-	map_tickets_11_20_CQS300 = var_11_20_CQS300
+	map_tickets_05_12_CQS300 = var_05_12_CQS300
+	map_tickets_13_24_CQS300 = var_13_24_CQS300
+	map_tickets_25_32_CQS300 = var_25_32_CQS300
+	map_tickets_33_48_CQS300 = var_33_48_CQS300
+	map_tickets_49_64_CQS300 = var_49_64_CQS300
+	map_tickets_65_128_CQS300 = var_65_128_CQS300
 
 	map_tickets_00_04 = map_tickets_00_04_CQS300
-	map_tickets_05_10 = map_tickets_05_10_CQS300
-	map_tickets_11_20 = map_tickets_11_20_CQS300
+	map_tickets_05_12 = map_tickets_05_12_CQS300
+	map_tickets_13_24 = map_tickets_13_24_CQS300
+	map_tickets_25_32 = map_tickets_25_32_CQS300
+	map_tickets_33_48 = map_tickets_33_48_CQS300
+	map_tickets_49_64 = map_tickets_49_64_CQS300
+	map_tickets_65_128 = map_tickets_65_128_CQS300
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS300/3) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_CQS300/3) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_CQS300/3) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS300/3)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_CQS300/3)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_CQS300/3)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_CQS300/3)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_CQS300/3)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_CQS300/3)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_CQS300/3)
 
 -- ------------------------------------------------------------------------------
 
  	elseif (CQS250_LevelNameMap[p_LevelName_CQS] ~= nill) then
--- Conques modes: Here u can set the server tickets for Conquest Small CQS250 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="CQS250"
  
 	map_tickets_00_04_CQS250 = var_00_04_CQS250
-	map_tickets_05_10_CQS250 = var_05_10_CQS250
-	map_tickets_11_20_CQS250 = var_11_20_CQS250
+	map_tickets_05_12_CQS250 = var_05_12_CQS250
+	map_tickets_13_24_CQS250 = var_13_24_CQS250
+	map_tickets_25_32_CQS250 = var_25_32_CQS250
+	map_tickets_33_48_CQS250 = var_33_48_CQS250
+	map_tickets_49_64_CQS250 = var_49_64_CQS250
+	map_tickets_65_128_CQS250 = var_65_128_CQS250
 
 	map_tickets_00_04 = map_tickets_00_04_CQS250
-	map_tickets_05_10 = map_tickets_05_10_CQS250
-	map_tickets_11_20 = map_tickets_11_20_CQS250
+	map_tickets_05_12 = map_tickets_05_12_CQS250
+	map_tickets_13_24 = map_tickets_13_24_CQS250
+	map_tickets_25_32 = map_tickets_25_32_CQS250
+	map_tickets_33_48 = map_tickets_33_48_CQS250
+	map_tickets_49_64 = map_tickets_49_64_CQS250
+	map_tickets_65_128 = map_tickets_65_128_CQS250
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS250/2.5) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_CQS250/2.5) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_CQS250/2.5) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS250/2.5)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_CQS250/2.5)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_CQS250/2.5)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_CQS250/2.5)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_CQS250/2.5)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_CQS250/2.5)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_CQS250/2.5)
 
 -- ------------------------------------------------------------------------------
 
  	elseif (CQS200_LevelNameMap[p_LevelName_CQS] ~= nill) then
--- Conques modes: Here u can set the server tickets for Conquest Small CQS200 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="CQS200"
  
 	map_tickets_00_04_CQS200 = var_00_04_CQS200
-	map_tickets_05_10_CQS200 = var_05_10_CQS200
-	map_tickets_11_20_CQS200 = var_11_20_CQS200
+	map_tickets_05_12_CQS200 = var_05_12_CQS200
+	map_tickets_13_24_CQS200 = var_13_24_CQS200
+	map_tickets_25_32_CQS200 = var_25_32_CQS200
+	map_tickets_33_48_CQS200 = var_33_48_CQS200
+	map_tickets_49_64_CQS200 = var_49_64_CQS200
+	map_tickets_65_128_CQS200 = var_65_128_CQS200
 
 	map_tickets_00_04 = map_tickets_00_04_CQS200
-	map_tickets_05_10 = map_tickets_05_10_CQS200
-	map_tickets_11_20 = map_tickets_11_20_CQS200
+	map_tickets_05_12 = map_tickets_05_12_CQS200
+	map_tickets_13_24 = map_tickets_13_24_CQS200
+	map_tickets_25_32 = map_tickets_25_32_CQS200
+	map_tickets_33_48 = map_tickets_33_48_CQS200
+	map_tickets_49_64 = map_tickets_49_64_CQS200
+	map_tickets_65_128 = map_tickets_65_128_CQS200
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS200/2) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_CQS200/2) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_CQS200/2) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS200/2)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_CQS200/2)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_CQS200/2)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_CQS200/2)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_CQS200/2)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_CQS200/2)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_CQS200/2)
 
 -- ------------------------------------------------------------------------------
 
  	elseif (CQS150_LevelNameMap[p_LevelName_CQS] ~= nill) then
--- Conques modes: Here u can set the server tickets for Conquest Small CQS150 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="CQS150"
  
 	map_tickets_00_04_CQS150 = var_00_04_CQS150
-	map_tickets_05_10_CQS150 = var_05_10_CQS150
-	map_tickets_11_20_CQS150 = var_11_20_CQS150
+	map_tickets_05_12_CQS150 = var_05_12_CQS150
+	map_tickets_13_24_CQS150 = var_13_24_CQS150
+	map_tickets_25_32_CQS150 = var_25_32_CQS150
+	map_tickets_33_48_CQS150 = var_33_48_CQS150
+	map_tickets_49_64_CQS150 = var_49_64_CQS150
+	map_tickets_65_128_CQS150 = var_65_128_CQS150
 
 	map_tickets_00_04 = map_tickets_00_04_CQS150
-	map_tickets_05_10 = map_tickets_05_10_CQS150
-	map_tickets_11_20 = map_tickets_11_20_CQS150
+	map_tickets_05_12 = map_tickets_05_12_CQS150
+	map_tickets_13_24 = map_tickets_13_24_CQS150
+	map_tickets_25_32 = map_tickets_25_32_CQS150
+	map_tickets_33_48 = map_tickets_33_48_CQS150
+	map_tickets_49_64 = map_tickets_49_64_CQS150
+	map_tickets_65_128 = map_tickets_65_128_CQS150
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS150/1.5) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_CQS150/1.5) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_CQS150/1.5) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_CQS150/1.5)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_CQS150/1.5)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_CQS150/1.5)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_CQS150/1.5)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_CQS150/1.5)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_CQS150/1.5)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_CQS150/1.5)
 	end
 
 -- ------------------------------------------------------------------------------
@@ -211,36 +258,66 @@ end
 
 	print(''..s_MapData..': - Setting Rcondata')
 	print(''..s_MapData..': - Gamemode: ('..s_GameMode_CQS..') - Mapname: ('..s_LevelName_CQS..') ') 
-	print(''..s_MapData..': - Setting map tickets: '..map_tickets_00_04..' - '..map_tickets_05_10..' - '..map_tickets_11_20..'') 
-	print(''..s_MapData..': - GameMode Counter data '..s_ticket_gmc_00_04..'% - '..s_ticket_gmc_05_10..'% - '..s_ticket_gmc_11_20..'%') 
+	print(''..s_MapData..': - Setting map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
+	print(''..s_MapData..': - GameMode Counter data '..s_ticket_gmc_00_04..'% - '..s_ticket_gmc_05_12..'% - '..s_ticket_gmc_13_24..'% - '..s_ticket_gmc_25_32..'% - '..s_ticket_gmc_33_48..'% - '..s_ticket_gmc_49_64..'% - '..s_ticket_gmc_65_128..'% ') 
 	print(''..s_MapData..': - Vehicles are '..s_vehicles_status..' ') 
 	print(''..s_MapData..': - Setting server tickets and GameMode Counter') 
 
 -- ------------------------------------------------------------------------------
 
 	local players = PlayerManager:GetPlayerCount()
-    if players <= 4 then
+	if players <= 4 then
 
 	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_00_04) }) 
 	RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
 	print(''..s_MapData..': - tickets set to '..map_tickets_00_04..' - GameMode Counter '..s_ticket_gmc_00_04..'%')
 	print(''..s_MapData..': - All presets loaded')  
        
-    elseif players >= 5 and players <= 10 then
+	elseif players >= 5 and players <= 12 then
 
-	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_05_10) }) 
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_05_12) }) 
         RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
-	print(''..s_MapData..': - tickets set to '..map_tickets_05_10..' - GameMode Counter '..s_ticket_gmc_05_10..'%')
+	print(''..s_MapData..': - tickets set to '..map_tickets_05_12..' - GameMode Counter '..s_ticket_gmc_05_12..'%')
 	print(''..s_MapData..': - All presets loaded')  
       
-    elseif players >= 11 and players <= 20 then
+	elseif players >= 13 and players <= 24 then
 
-	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_11_20) }) 
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_13_24) }) 
         RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
-	print(''..s_MapData..': - tickets set to '..map_tickets_11_20..' - GameMode Counter '..s_ticket_gmc_11_20..'%')
+	print(''..s_MapData..': - tickets set to '..map_tickets_13_24..' - GameMode Counter '..s_ticket_gmc_13_24..'%')
 	print(''..s_MapData..': - All presets loaded')  
-	end
+--
+	elseif players >= 25 and players <= 32 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_25_32) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_25_32..' - GameMode Counter '..s_ticket_gmc_25_32..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 33 and players <= 48 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_33_48) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_33_48..' - GameMode Counter '..s_ticket_gmc_33_48..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 49 and players <= 64 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_49_64) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_49_64..' - GameMode Counter '..s_ticket_gmc_49_64..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 65 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_65_128) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_65_128..' - GameMode Counter '..s_ticket_gmc_65_128..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+
+
 
 end
+end
 end)
-

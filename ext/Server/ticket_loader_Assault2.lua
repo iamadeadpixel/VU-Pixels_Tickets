@@ -39,72 +39,84 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_Assault2, p_GameMod
 	local d_LevelName = ServerUtils and ServerUtils:GetCustomMapName() or Assault2_Disabled_LevelNameMap[p_LevelName_Assault2]
 
 -- ------------------------------------------------------------------------------
--- 3 maps Assault2
--- XP1_004     Wake Island		- Assault: US 400 / RU 300 Tickets
--- XP1_001     Strike at Karkand	- Assault: US 250 / RU 300 Tickets ? US 250 - RU 200
--- XP1_003     Sharqi Peninsula		- Assault: US 200 / RU 220 Tickets
-
--- Assault75: ticket rate 100% = 75 Tickets - divider = *1.34
--- Assault100: ticket rate 100% = 100 Tickets - divider = 1
-
--- ------------------------------------------------------------------------------
 
 	if (Assault2_400_300_LevelNameMap[p_LevelName_Assault2] ~= nill) then
--- Conques modes: Here u can set the server tickets for Assault2_400_300 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="Assault2_400_300"
 
 	map_tickets_00_04_Assault2_400_300 = var_00_04_Assault2_400_300
-	map_tickets_05_10_Assault2_400_300 = var_05_10_Assault2_400_300
-	map_tickets_11_20_Assault2_400_300 = var_11_20_Assault2_400_300
+	map_tickets_05_12_Assault2_400_300 = var_05_12_Assault2_400_300
+	map_tickets_13_24_Assault2_400_300 = var_13_24_Assault2_400_300
+	map_tickets_25_32_Assault2_400_300 = var_25_32_Assault2_400_300
+	map_tickets_33_48_Assault2_400_300 = var_33_48_Assault2_400_300
+	map_tickets_49_64_Assault2_400_300 = var_49_64_Assault2_400_300
+	map_tickets_65_128_Assault2_400_300 = var_65_128_Assault2_400_300
 
 	map_tickets_00_04 = map_tickets_00_04_Assault2_400_300
-	map_tickets_05_10 = map_tickets_05_10_Assault2_400_300
-	map_tickets_11_20 = map_tickets_11_20_Assault2_400_300
+	map_tickets_05_12 = map_tickets_05_12_Assault2_400_300
+	map_tickets_13_24 = map_tickets_13_24_Assault2_400_300
+	map_tickets_25_32 = map_tickets_25_32_Assault2_400_300
+	map_tickets_33_48 = map_tickets_33_48_Assault2_400_300
+	map_tickets_49_64 = map_tickets_49_64_Assault2_400_300
+	map_tickets_65_128 = map_tickets_65_128_Assault2_400_300
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_Assault2_400_300/4) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_Assault2_400_300/4) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_Assault2_400_300/4) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_Assault2_400_300/4)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_Assault2_400_300/4)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_Assault2_400_300/4)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_Assault2_400_300/4)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_Assault2_400_300/4)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_Assault2_400_300/4)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_Assault2_400_300/4)
 
 -- ------------------------------------------------------------------------------
 
 	elseif (Assault2_250_200_LevelNameMap[p_LevelName_Assault2] ~= nill) then
--- Conques modes: Here u can set the server tickets for Assault2_250_200 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="Assault2_250_200"
 
 	map_tickets_00_04_Assault2_250_200 = var_00_04_Assault2_250_200
-	map_tickets_05_10_Assault2_250_200 = var_05_10_Assault2_250_200
-	map_tickets_11_20_Assault2_250_200 = var_11_20_Assault2_250_200
+	map_tickets_05_12_Assault2_250_200 = var_05_12_Assault2_250_200
+	map_tickets_13_24_Assault2_250_200 = var_13_24_Assault2_250_200
+	map_tickets_25_32_Assault2_250_200 = var_25_32_Assault2_250_200
+	map_tickets_33_48_Assault2_250_200 = var_33_48_Assault2_250_200
+	map_tickets_49_64_Assault2_250_200 = var_49_64_Assault2_250_200
+	map_tickets_65_128_Assault2_250_200 = var_65_128_Assault2_250_200
 
 	map_tickets_00_04 = map_tickets_00_04_Assault2_250_200
-	map_tickets_05_10 = map_tickets_05_10_Assault2_250_200
-	map_tickets_11_20 = map_tickets_11_20_Assault2_250_200
+	map_tickets_05_12 = map_tickets_05_12_Assault2_250_200
+	map_tickets_13_24 = map_tickets_13_24_Assault2_250_200
+	map_tickets_25_32 = map_tickets_25_32_Assault2_250_200
+	map_tickets_33_48 = map_tickets_33_48_Assault2_250_200
+	map_tickets_49_64 = map_tickets_49_64_Assault2_250_200
+	map_tickets_65_128 = map_tickets_65_128_Assault2_250_200
 
-	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_Assault2_250_200/2.5) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_Assault2_250_200/2.5) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_Assault2_250_200/2.5) -- The value get some math magic
+	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_Assault2_250_200/2.5)
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_Assault2_250_200/2.5)
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_Assault2_250_200/2.5)
+	s_ticket_gmc_25_32 = math.floor(map_tickets_25_32_Assault2_250_200/2.5)
+	s_ticket_gmc_33_48 = math.floor(map_tickets_33_48_Assault2_250_200/2.5)
+	s_ticket_gmc_49_64 = math.floor(map_tickets_49_64_Assault2_250_200/2.5)
+	s_ticket_gmc_65_128 = math.floor(map_tickets_65_128_Assault2_250_200/2.5)
 
 -- ------------------------------------------------------------------------------
 	elseif (Assault2_200_220_LevelNameMap[p_LevelName_Assault2] ~= nill) then
--- Conques modes: Here u can set the server tickets for Assault2_200_220 maps
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
 	s_MapData="Assault2_200_220"
 
 	map_tickets_00_04_Assault2_200_220 = var_00_04_Assault2_200_220
-	map_tickets_05_10_Assault2_200_220 = var_05_10_Assault2_200_220
-	map_tickets_11_20_Assault2_200_220 = var_11_20_Assault2_200_220
+	map_tickets_05_12_Assault2_200_220 = var_05_12_Assault2_200_220
+	map_tickets_13_24_Assault2_200_220 = var_13_24_Assault2_200_220
 
 	map_tickets_00_04 = map_tickets_00_04_Assault2_200_220
-	map_tickets_05_10 = map_tickets_05_10_Assault2_200_220
-	map_tickets_11_20 = map_tickets_11_20_Assault2_200_220
+	map_tickets_05_12 = map_tickets_05_12_Assault2_200_220
+	map_tickets_13_24 = map_tickets_13_24_Assault2_200_220
 
 	s_ticket_gmc_00_04 = math.floor(map_tickets_00_04_Assault2_200_220/2) -- The value get some math magic
-	s_ticket_gmc_05_10 = math.floor(map_tickets_05_10_Assault2_200_220/2) -- The value get some math magic
-	s_ticket_gmc_11_20 = math.floor(map_tickets_11_20_Assault2_200_220/2) -- The value get some math magic
+	s_ticket_gmc_05_12 = math.floor(map_tickets_05_12_Assault2_200_220/2) -- The value get some math magic
+	s_ticket_gmc_13_24 = math.floor(map_tickets_13_24_Assault2_200_220/2) -- The value get some math magic
 	end
 
 -- ------------------------------------------------------------------------------
@@ -130,36 +142,63 @@ end
 
 	print(''..s_MapData..': - Setting Rcondata')
 	print(''..s_MapData..': - Gamemode: ('..s_GameMode_Assault2..') - Mapname: ('..s_LevelName_Assault2..') ') 
-	print(''..s_MapData..': - Setting map tickets: '..map_tickets_00_04..' - '..map_tickets_05_10..' - '..map_tickets_11_20..'') 
-	print(''..s_MapData..': - GameMode Counter data '..s_ticket_gmc_00_04..'% - '..s_ticket_gmc_05_10..'% - '..s_ticket_gmc_11_20..'%') 
+	print(''..s_MapData..': - Setting map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
+	print(''..s_MapData..': - GameMode Counter data '..s_ticket_gmc_00_04..'% - '..s_ticket_gmc_05_12..'% - '..s_ticket_gmc_13_24..'% - '..s_ticket_gmc_25_32..'% - '..s_ticket_gmc_33_48..'% - '..s_ticket_gmc_49_64..'% - '..s_ticket_gmc_65_128..'% ') 
 	print(''..s_MapData..': - Vehicles are '..s_vehicles_status..' ') 
 	print(''..s_MapData..': - Setting server tickets and GameMode Counter') 
 
 -- ------------------------------------------------------------------------------
 
-    local players = PlayerManager:GetPlayerCount()
-    if players <= 4 then
+	local players = PlayerManager:GetPlayerCount()
+	if players <= 4 then
 
 	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_00_04) }) 
 	RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
 	print(''..s_MapData..': - tickets set to '..map_tickets_00_04..' - GameMode Counter '..s_ticket_gmc_00_04..'%')
 	print(''..s_MapData..': - All presets loaded')  
        
-    elseif players >= 5 and players <= 10 then
+	elseif players >= 5 and players <= 12 then
 
-	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_05_10) }) 
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_05_12) }) 
         RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
-	print(''..s_MapData..': - tickets set to '..map_tickets_05_10..' - GameMode Counter '..s_ticket_gmc_05_10..'%')
+	print(''..s_MapData..': - tickets set to '..map_tickets_05_12..' - GameMode Counter '..s_ticket_gmc_05_12..'%')
 	print(''..s_MapData..': - All presets loaded')  
       
-    elseif players >= 11 and players <= 20 then
+	elseif players >= 13 and players <= 24 then
 
-	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_11_20) }) 
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_13_24) }) 
         RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
-	print(''..s_MapData..': - tickets set to '..map_tickets_11_20..' - GameMode Counter '..s_ticket_gmc_11_20..'%')
+	print(''..s_MapData..': - tickets set to '..map_tickets_13_24..' - GameMode Counter '..s_ticket_gmc_13_24..'%')
 	print(''..s_MapData..': - All presets loaded')  
-	end
+--
+	elseif players >= 25 and players <= 32 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_25_32) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_25_32..' - GameMode Counter '..s_ticket_gmc_25_32..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 33 and players <= 48 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_33_48) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_33_48..' - GameMode Counter '..s_ticket_gmc_33_48..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 49 and players <= 64 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_49_64) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_49_64..' - GameMode Counter '..s_ticket_gmc_49_64..'%')
+	print(''..s_MapData..': - All presets loaded')  
+
+	elseif players >= 65 then
+
+	RCON:SendCommand('vars.gameModeCounter', { tostring(s_ticket_gmc_65_128) }) 
+        RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) })
+	print(''..s_MapData..': - tickets set to '..map_tickets_65_128..' - GameMode Counter '..s_ticket_gmc_65_128..'%')
+	print(''..s_MapData..': - All presets loaded')  
 
 end
+end
 end)
-
