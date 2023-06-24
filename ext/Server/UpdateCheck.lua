@@ -1,4 +1,4 @@
-require('__shared/version') -- under normal conditions use this.
+require('version') -- under normal conditions use this.
 
 -- This line contains the message if the mod.json is the same on github ,as is the version.lua localy on your server
 s_current = ("VU-Pixels_Tickets seems to be up2date")
