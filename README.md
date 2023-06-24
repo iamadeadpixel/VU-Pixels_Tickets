@@ -4,6 +4,9 @@
 - Crude setup, but it works.
 - A nicer code is work in progress (i hope)
 - Have fun setting the things u want.
+- Edit the ticket_loader_Config.lua file
+- Here are all tickets defined
+- This is my current init setup
 
 - This version has 3 playercount check.
 - 1: 0 to 4 players
@@ -21,3 +24,4 @@
 # Disclaimer
 - 1: Do not run any mod or procon plugin that also can change tickers/flags
 - 2: Do not manualy adjust the ticket/flag ration, this mod wil overwrite it anyways.
+- 3: Break it, mod it, tweak it.
