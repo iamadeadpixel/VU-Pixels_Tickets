@@ -8,14 +8,14 @@ s_update = ("VU-Pixels_Tickets seems to be out of date!")
 
 -- Make sure this point on github to your mod.json file !
 -- Example: s_githublink = ("https://raw.githubusercontent.com/-username-/-modname-/main/mod.json") 
-s_githublink = ("https://raw.githubusercontent.com/spatieman/VU-Pixels_updatecheck/main/mod.json")
+s_githublink = ("https://raw.githubusercontent.com/spatieman/VU-Pixels_Tickets/main/mod.json")
 
 
 function getCurrentVersion()
     options = HttpOptions({}, 10);
     options.verifyCertificate = false; --ignore cert for wine users
   -- Make sure you paste the SAME link in s_githublink variable !
-  res = Net:GetHTTP("http://test.xs4non.nl:85/mod.json", options);
+  res = Net:GetHTTP("https://raw.githubusercontent.com/spatieman/VU-Pixels_Tickets/main/mod.json", options);
     if res.status ~= 200 then
         return null;
     end
