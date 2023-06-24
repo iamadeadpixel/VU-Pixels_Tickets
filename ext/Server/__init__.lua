@@ -1,5 +1,5 @@
 -- Checks if there is a newer version on server startup
-UpdateCheck.lua
+require('UpdateCheck')
 
 -- This the config where u need to set the tickets for each gamemode.
 require('ticket_loader_Config')
