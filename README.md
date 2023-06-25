@@ -28,3 +28,4 @@
 - 1: Do not run any mod or procon plugin that also can change tickers/flags
 - 2: Do not manualy adjust the ticket/flag ration, this mod wil overwrite it anyways.
 - 3: Break it, mod it, tweak it.
+- 4: Keku's Map mod is not yet suported for ticket switch.
