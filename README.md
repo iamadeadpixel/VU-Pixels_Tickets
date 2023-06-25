@@ -31,3 +31,5 @@
 - 2: Do not manualy adjust the ticket/flag ration, this mod wil overwrite it anyways.
 - 3: Break it, mod it, tweak it.
 - 4: Keku's Map mod is not yet suported for ticket switch.
+- 5: Bflag mod is not yet detected..
+- 
