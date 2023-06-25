@@ -18,6 +18,20 @@ local Rush_SQ_Disabled_LevelNameMap = {
 -- ------------------------------------------------------------------------------
 -- Squad Rush: ticket rate 100% = 20 Kills 
 local Rush_SQ_LevelNameMap = {
+-- Keku's map mod stuff 
+	["Levels/COOP_002/COOP_002"] = "Hit and Run",
+	["Levels/COOP_006/COOP_006"] = "Fire from the Sky",
+	["Levels/SP_Jet/SP_Jet"] = "Going Hunting",
+	["Levels/SP_Valley/SP_Valley"] = "Rock and a Hard Place",
+	["Levels/SP_Villa/SP_Villa"] = "Kaffarov's Villa",
+	["Levels/COOP_010/COOP_010"] = "The Eleventh Hour",
+
+	["Levels/XP2_Factory/XP2_Factory"] = "Scrapmetal",
+	["Levels/XP2_Office/XP2_Office"] = "Operation 925",
+	["Levels/XP2_Palace/XP2_Palace"] = "Donya Fortress",
+	["Levels/XP2_Skybar/XP2_Skybar"] = "Ziba Tower",
+
+-- Stock  
 	["Levels/MP_001/MP_001"] = "Grand Bazaar",
 	["Levels/MP_003/MP_003"] = "Teheran Highway",
 	["Levels/MP_007/MP_007"] = "Caspian Border",

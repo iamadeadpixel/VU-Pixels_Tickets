@@ -6,6 +6,10 @@ local global_GameModeNameMap = {
 
 -- Tank Superiority: ticket rate 100% = 200 Tickets
 local TS200_LevelNameMap = {
+-- Keku's map mod stuff 
+	["Levels/COOP_006/COOP_006"] = "Fire from the Sky",
+
+-- Stock  
 	["Levels/XP3_Desert/XP3_Desert"] = "Bandar Desert",
 	["Levels/XP3_Alborz/XP3_Alborz"] = "Alborz Mountains",
 	["Levels/XP3_Shield/XP3_Shield"] = "Armored Shield",

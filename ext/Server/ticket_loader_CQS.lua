@@ -21,6 +21,10 @@ local CQS_Disabled_LevelNameMap = {
 
 -- CQS: ticket rate 100% = 350 Tickets
 local CQS350_LevelNameMap = {
+-- Keku's map mod stuff 
+	["Levels/COOP_006/COOP_006"] = "Fire from the Sky",
+
+-- Stock  
 	["Levels/MP_Subway/MP_Subway"] = "Operation Metro"
 } 
 

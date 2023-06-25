@@ -7,6 +7,14 @@ local global_GameModeNameMap = {
 -- ------------------------------------------------------------------------------
 -- Squad Deathmatch: ticket rate 100% = 50 kills
 local TDM_SQ_LevelNameMap = {
+-- Keku's map mod stuff
+	["Levels/COOP_002/COOP_002"] = "Hit and Run",
+	["Levels/COOP_006/COOP_006"] = "Fire from the Sky",
+	["Levels/SP_Jet/SP_Jet"] = "Going Hunting",
+	["Levels/SP_Valley/SP_Valley"] = "Rock and a Hard Place",
+	["Levels/SP_Villa/SP_Villa"] = "Kaffarov's Villa",
+
+-- Stock
 	["Levels/MP_001/MP_001"] = "Grand Bazaar",
 	["Levels/MP_003/MP_003"] = "Teheran Highway",
 	["Levels/MP_007/MP_007"] = "Caspian Border",
