@@ -6,10 +6,10 @@ local global_GameModeNameMap = {
 
 local GunMaster_LevelNameMap = {
 -- Keku's map mod stuff 
-	["Levels/COOP_002/COOP_002"] = "Hit and Run"
-	["Levels/COOP_006/COOP_006"] = "Fire from the Sky"
-	["Levels/SP_Jet/SP_Jet"] = "Going Hunting"
-	["Levels/SP_Villa/SP_Villa"] = "Kaffarov's Villa"
+	["Levels/COOP_002/COOP_002"] = "Hit and Run",
+	["Levels/COOP_006/COOP_006"] = "Fire from the Sky",
+	["Levels/SP_Jet/SP_Jet"] = "Going Hunting",
+	["Levels/SP_Villa/SP_Villa"] = "Kaffarov's Villa",
 
 	["Levels/MP_001/MP_001"] = "Grand Bazaar",
 	["Levels/MP_003/MP_003"] = "Teheran Highway",
@@ -34,7 +34,7 @@ local GunMaster_LevelNameMap = {
 	["Levels/XP5_001/XP5_001"] = "Operation Riverside",
 	["Levels/XP5_002/XP5_002"] = "Nebandan Flats",
 	["Levels/XP5_003/XP5_003"] = "Kiasar Railroad",
-	["Levels/XP5_004/XP5_004"] = "Sabalan Pipeline"
+	["Levels/XP5_004/XP5_004"] = "Sabalan Pipeline",
 
 -- Stock  
 	["Levels/XP2_Factory/XP2_Factory"] = "Scrapmetal",
