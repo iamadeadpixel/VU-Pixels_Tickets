@@ -1,8 +1,8 @@
 {
     "Name": "Kinky tickets",
     "Description": "Based on a IllustrisJack's mod",
-    "Version": "1.0.7",
-    "Reason": "Added Keku's all map mode.",
+    "Version": "1.0.8",
+    "Reason": "Fixed how the mod worked",
     "Authors": [ "iamadeadpixel" ],
     "HasVeniceEXT": true,
     "Dependencies": {

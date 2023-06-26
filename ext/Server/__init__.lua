@@ -1,13 +1,13 @@
 -- Checks if there is a newer version on server startup
-require('UpdateCheck')
+--require('UpdateCheck')
 
 -- This the config where u need to set the tickets for each gamemode.
 require('ticket_loader_Config')
 
 -- Ticket count per game mode
+require('ticket_loader_AS')
 require('ticket_loader_CQL')
 require('ticket_loader_CQS')
-require('ticket_loader_AS')
 require('ticket_loader_Scavenger')
 require('ticket_loader_TS')
 require('ticket_loader_TDM')

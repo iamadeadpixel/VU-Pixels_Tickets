@@ -1,5 +1,8 @@
 # Based on a mod from IllustrisJack's
 ## VU-Pixels_Tickets
+# V1.0.8
+- Overworked the whole mod and fixed some isues.
+- Console data looks now more nice.
 # V1.0.7
 - Added Keku's map data for TDM - SQ TDM - CQ TDM - Conquest Large - Conquest Small
 - Added Keku's map data for GunMaster - Air Superiority - CTF - Domination
@@ -35,3 +38,4 @@
 - 2: Do not manualy adjust the ticket/flag ration, this mod wil overwrite it anyways.
 - 3: Break it, mod it, tweak it.
 - 4: Bflag mod: Work in progress
+- 5: Known isue on keku's maps: Fixed ticket rate, this is a nice WIP..
