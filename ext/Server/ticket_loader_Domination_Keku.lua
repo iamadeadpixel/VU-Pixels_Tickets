@@ -1,52 +1,84 @@
 -- ------------------------------------------------------------------------------
-
+-- does NOT support vehicles !
 local global_GameModeNameMap = {
-	["TankSuperiority0"] = "Tank Superiority"
+	["Domination0"] = "Domination",
 }  
 
--- Tank Superiority: ticket rate 100% = 200 Tickets
-local TS200_LevelNameMap = {
+-- ------------------------------------------------------------------------------
+
+-- Domination: ticket rate 100% = 150 tickets
+local Keku_DOM150_LevelNameMap = {
+-- Keku's map mod stuff 
+	["Levels/COOP_002/COOP_002"] = "Hit and Run",
+	["Levels/SP_Jet/SP_Jet"] = "Going Hunting",
+	["Levels/SP_Villa/SP_Villa"] = "Kaffarov's Villa",
+
+	["Levels/MP_001/MP_001"] = "Grand Bazaar",
+	["Levels/MP_003/MP_003"] = "Teheran Highway",
+	["Levels/MP_007/MP_007"] = "Caspian Border",
+	["Levels/MP_011/MP_011"] = "Seine Crossing",
+	["Levels/MP_012/MP_012"] = "Operation Firestorm",
+	["Levels/MP_013/MP_013"] = "Damavand Peak",
+	["Levels/MP_017/MP_017"] = "Noshahr Canals",
+	["Levels/MP_018/MP_018"] = "Kharg Island",
+	["Levels/MP_Subway/MP_Subway"] = "Operation Metro",
+
+	["Levels/XP1_001/XP1_001"] = "Strike at Karkand",
+	["Levels/XP1_002/XP1_002"] = "Gulf of Oman",
+	["Levels/XP1_003/XP1_003"] = "Sharqi Peninsula",
+	["Levels/XP1_004/XP1_004"] = "Wake Island",
+
 	["Levels/XP3_Desert/XP3_Desert"] = "Bandar Desert",
 	["Levels/XP3_Alborz/XP3_Alborz"] = "Alborz Mountains",
 	["Levels/XP3_Shield/XP3_Shield"] = "Armored Shield",
-	["Levels/XP3_Valley/XP3_Valley"] = "Death Valley"
+	["Levels/XP3_Valley/XP3_Valley"] = "Death Valley",
+
+	["Levels/XP4_FD/XP4_FD"] = "Markaz Monolith",
+	["Levels/XP4_Parl/XP4_Parl"] = "Azadi Palace",
+	["Levels/XP4_Quake/XP4_Quake"] = "Epicenter",
+	["Levels/XP4_Rubble/XP4_Rubble"] = "Talah Market",
+
+	["Levels/XP5_001/XP5_001"] = "Operation Riverside",
+	["Levels/XP5_002/XP5_002"] = "Nebandan Flats",
+	["Levels/XP5_003/XP5_003"] = "Kiasar Railroad",
+	["Levels/XP5_004/XP5_004"] = "Sabalan Pipeline"
 } 
 
 -- ------------------------------------------------------------------------------
 
-Events:Subscribe('Level:LoadResources', function(p_LevelName_TS, p_GameMode_TS, p_IsDedicatedServer)
+Events:Subscribe('Level:LoadResources', function(p_LevelName_Keku_DOM, p_GameMode_Keku_DOM, p_IsDedicatedServer)
 -- Contains ALL GameModemap data
-	local s_GameMode_TS = ServerUtils and ServerUtils:GetCustomGameModeName() or global_GameModeNameMap[p_GameMode_TS] or p_GameMode_TS
+	local s_GameMode_Keku_DOM = ServerUtils and ServerUtils:GetCustomGameModeName() or global_GameModeNameMap[p_GameMode_Keku_DOM] or p_GameMode_Keku_DOM
 
--- Contains Tank Superiority map data
-	s_LevelName_TS = ServerUtils and ServerUtils:GetCustomMapName() or TS200_LevelNameMap[p_LevelName_TS] or p_LevelName_TS and s_GameMode_TS == "Tank Superiority"
+-- Contains Domination map data
+	s_LevelName_Keku_DOM = ServerUtils and ServerUtils:GetCustomMapName() or Keku_DOM150_LevelNameMap[p_LevelName_Keku_DOM] or p_LevelName_Keku_DOM and s_GameMode_Keku_DOM == "Domination"
 
 -- ------------------------------------------------------------------------------
 
-	if (TS200_LevelNameMap[p_LevelName_TS] ~= nill) then
-	s_vehicles = "true"
-	s_vehicles_status = "Enabled"
-	s_MapData="TS200"
+	if (Keku_DOM150_LevelNameMap[p_LevelName_Keku_DOM] ~= nill) then
+	s_vehicles = "false"
+	s_vehicles_status = "Disabled"
+	s_MapData="Keku_DOM150"
 
-	map_tickets_00_04 = Tickets_00_04_TS200
-	map_tickets_05_12 = Tickets_05_12_TS200
-	map_tickets_13_24 = Tickets_13_24_TS200
-	map_tickets_25_32 = Tickets_25_32_TS200
-	map_tickets_33_48 = Tickets_33_48_TS200
-	map_tickets_49_64 = Tickets_49_64_TS200
-	map_tickets_65_128 = Tickets_65_128_TS200
+	map_tickets_00_04 = Tickets_00_04_DOM150
+	map_tickets_05_12 = Tickets_05_12_DOM150
+	map_tickets_13_24 = Tickets_13_24_DOM150
+	map_tickets_25_32 = Tickets_25_32_DOM150
+	map_tickets_33_48 = Tickets_33_48_DOM150
+	map_tickets_49_64 = Tickets_49_64_DOM150
+	map_tickets_65_128 = Tickets_65_128_DOM150
 
-	GameModeCounter_00_04 = math.floor(map_tickets_00_04/2)
-	GameModeCounter_05_12 = math.floor(map_tickets_05_12/2)
-	GameModeCounter_13_24 = math.floor(map_tickets_13_24/2)
-	GameModeCounter_25_32 = math.floor(map_tickets_25_32/2)
-	GameModeCounter_33_48 = math.floor(map_tickets_33_48/2)
-	GameModeCounter_49_64 = math.floor(map_tickets_49_64/2)
-	GameModeCounter_65_128 = math.floor(map_tickets_65_128/2) 
+	GameModeCounter_00_04 = math.floor(map_tickets_00_04/1.5)
+	GameModeCounter_05_12 = math.floor(map_tickets_05_12/1.5)
+	GameModeCounter_13_24 = math.floor(map_tickets_13_24/1.5)
+	GameModeCounter_25_32 = math.floor(map_tickets_25_32/1.5)
+	GameModeCounter_33_48 = math.floor(map_tickets_33_48/1.5)
+	GameModeCounter_49_64 = math.floor(map_tickets_49_64/1.5)
+	GameModeCounter_65_128 = math.floor(map_tickets_65_128/1.5)
+
 end
 
 -- ------------------------------------------------------------------------------
-
 -- What ever it is what this do.
 	Events:Subscribe('Level:LoadingInfo', function(screenInfo)
 	if screenInfo ~= "Registering entity resources" then
@@ -57,12 +89,12 @@ end)
 -- ------------------------------------------------------------------------------
 
 	local lm = SharedUtils:GetLevelName() 
-	if lm == p_LevelName_TS  and s_GameMode_TS == "Tank Superiority" then
+	if lm == p_LevelName_Keku_DOM  and s_GameMode_Keku_DOM == "Domination" then
 
 	local s_MaxPlayersRCON = RCON:SendCommand('vars.maxPlayers')
 	local s_MaxPlayers = tonumber(s_MaxPlayersRCON[2])
 	
-	print(''..s_MapData..': - Reading map data: '..s_LevelName_TS..' - '..s_GameMode_TS..' ')
+	print(''..s_MapData..': - Reading map data: '..s_LevelName_Keku_DOM..' - '..s_GameMode_Keku_DOM..' ')
 	print(''..s_MapData..': - Reading map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
 	print(''..s_MapData..': - Reading GameMode Counter data '..GameModeCounter_00_04..'% - '..GameModeCounter_05_12..'% - '..GameModeCounter_13_24..'% - '..GameModeCounter_25_32..'% - '..GameModeCounter_33_48..'% - '..GameModeCounter_49_64..'% - '..GameModeCounter_65_128..'% ') 
 	print(''..s_MapData..': - Setting server tickets and GameMode Counter ') 

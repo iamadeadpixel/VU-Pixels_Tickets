@@ -143,43 +143,43 @@ Tickets_65_128_AS250 = 1000 -- Ticket ratio for 65 - 128 players
 -- Assault ticket count config.
 -- Tickets for the following maps
 -- Strike at Karkand - Talah Market
- Tickets_00_04_Assault300_250 = 300 -- Ticket ratio for 0 - 4 players
- Tickets_05_12_Assault300_250 = 400 -- Ticket ratio for 5 - 12 players
- Tickets_13_24_Assault300_250 = 500 -- Ticket ratio for 13 - 24 players
- Tickets_25_32_Assault300_250 = 600 -- Ticket ratio for 25 - 32 players 
- Tickets_33_48_Assault300_250 = 700 -- Ticket ratio for 33 - 48 players 
- Tickets_49_64_Assault300_250 = 800 -- Ticket ratio for 49 - 64 players
-Tickets_65_128_Assault300_250 = 1000 -- Ticket ratio for 65 - 128 players 
+ Tickets_00_04_Assault_300_250 = 300 -- Ticket ratio for 0 - 4 players
+ Tickets_05_12_Assault_300_250 = 400 -- Ticket ratio for 5 - 12 players
+ Tickets_13_24_Assault_300_250 = 500 -- Ticket ratio for 13 - 24 players
+ Tickets_25_32_Assault_300_250 = 600 -- Ticket ratio for 25 - 32 players 
+ Tickets_33_48_Assault_300_250 = 700 -- Ticket ratio for 33 - 48 players 
+ Tickets_49_64_Assault_300_250 = 800 -- Ticket ratio for 49 - 64 players
+Tickets_65_128_Assault_300_250 = 1000 -- Ticket ratio for 65 - 128 players 
 
 -- Tickets for the following maps
 -- Wake Island
- Tickets_00_04_Assault300_220 = 300 -- Ticket ratio for 0 - 4 players
- Tickets_05_12_Assault300_220 = 400 -- Ticket ratio for 5 - 12 players
- Tickets_13_24_Assault300_220 = 500 -- Ticket ratio for 13 - 24 players
- Tickets_25_32_Assault300_220 = 600 -- Ticket ratio for 25 - 32 players 
- Tickets_33_48_Assault300_220 = 700 -- Ticket ratio for 33 - 48 players 
- Tickets_49_64_Assault300_220 = 800 -- Ticket ratio for 49 - 64 players
-Tickets_65_128_Assault300_220 = 1000 -- Ticket ratio for 65 - 128 players 
+ Tickets_00_04_Assault_300_220 = 300 -- Ticket ratio for 0 - 4 players
+ Tickets_05_12_Assault_300_220 = 400 -- Ticket ratio for 5 - 12 players
+ Tickets_13_24_Assault_300_220 = 500 -- Ticket ratio for 13 - 24 players
+ Tickets_25_32_Assault_300_220 = 600 -- Ticket ratio for 25 - 32 players 
+ Tickets_33_48_Assault_300_220 = 700 -- Ticket ratio for 33 - 48 players 
+ Tickets_49_64_Assault_300_220 = 800 -- Ticket ratio for 49 - 64 players
+Tickets_65_128_Assault_300_220 = 1000 -- Ticket ratio for 65 - 128 players 
 
 -- Tickets for the following maps
 -- Gulf of Oman
- Tickets_00_04_Assault230_200 = 200 -- Ticket ratio for 0 - 4 players
- Tickets_05_12_Assault230_200 = 300 -- Ticket ratio for 5 - 12 players
- Tickets_13_24_Assault230_200 = 400 -- Ticket ratio for 13 - 24 players
- Tickets_25_32_Assault230_200 = 500 -- Ticket ratio for 25 - 32 players 
- Tickets_33_48_Assault230_200 = 600 -- Ticket ratio for 33 - 48 players 
- Tickets_49_64_Assault230_200 = 700 -- Ticket ratio for 49 - 64 players
-Tickets_65_128_Assault230_200 = 1000 -- Ticket ratio for 65 - 128 players 
+ Tickets_00_04_Assault_230_200 = 200 -- Ticket ratio for 0 - 4 players
+ Tickets_05_12_Assault_230_200 = 300 -- Ticket ratio for 5 - 12 players
+ Tickets_13_24_Assault_230_200 = 400 -- Ticket ratio for 13 - 24 players
+ Tickets_25_32_Assault_230_200 = 500 -- Ticket ratio for 25 - 32 players 
+ Tickets_33_48_Assault_230_200 = 600 -- Ticket ratio for 33 - 48 players 
+ Tickets_49_64_Assault_230_200 = 700 -- Ticket ratio for 49 - 64 players
+Tickets_65_128_Assault_230_200 = 1000 -- Ticket ratio for 65 - 128 players 
 
 -- Tickets for the following maps
 -- Sharqi Peninsula
- Tickets_00_04_Assault200_250 = 200 -- Ticket ratio for 0 - 4 players
- Tickets_05_12_Assault200_250 = 300 -- Ticket ratio for 5 - 12 players
- Tickets_13_24_Assault200_250 = 400 -- Ticket ratio for 13 - 24 players
- Tickets_25_32_Assault200_250 = 500 -- Ticket ratio for 25 - 32 players 
- Tickets_33_48_Assault200_250 = 600 -- Ticket ratio for 33 - 48 players 
- Tickets_49_64_Assault200_250 = 700 -- Ticket ratio for 49 - 64 players
-Tickets_65_128_Assault200_250 = 1000 -- Ticket ratio for 65 - 128 players 
+ Tickets_00_04_Assault_200_250 = 200 -- Ticket ratio for 0 - 4 players
+ Tickets_05_12_Assault_200_250 = 300 -- Ticket ratio for 5 - 12 players
+ Tickets_13_24_Assault_200_250 = 400 -- Ticket ratio for 13 - 24 players
+ Tickets_25_32_Assault_200_250 = 500 -- Ticket ratio for 25 - 32 players 
+ Tickets_33_48_Assault_200_250 = 600 -- Ticket ratio for 33 - 48 players 
+ Tickets_49_64_Assault_200_250 = 700 -- Ticket ratio for 49 - 64 players
+Tickets_65_128_Assault_200_250 = 1000 -- Ticket ratio for 65 - 128 players 
 
 
 -- ---------------------------------------
@@ -231,7 +231,7 @@ Tickets_65_128_Assault64_400_350 = 1000 -- Ticket ratio for 65 - 128 players
 
 -- Tickets for the following maps
 -- Wake Island
- Tickets_00_04_Assault64_400_300 = 200 -- Ticket ratio for 0 - 4 players
+ Tickets_00_04_Assault64_400_300 = 300 -- Ticket ratio for 0 - 4 players
  Tickets_05_12_Assault64_400_300 = 400 -- Ticket ratio for 5 - 12 players
  Tickets_13_24_Assault64_400_300 = 500 -- Ticket ratio for 13 - 24 players
  Tickets_25_32_Assault64_400_300 = 600 -- Ticket ratio for 25 - 32 players 

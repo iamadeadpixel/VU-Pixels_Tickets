@@ -1,5 +1,8 @@
 # Based on a mod from IllustrisJack's
 ## VU-Pixels_Tickets
+# V1.0.9
+- Some nasty typo's on the assault configs
+- Keku's map still messing up with this mod, but works perfect on vanilla maps.
 # V1.0.8
 - Overworked the whole mod and fixed some isues.
 - Console data looks now more nice.
@@ -38,4 +41,4 @@
 - 2: Do not manualy adjust the ticket/flag ration, this mod wil overwrite it anyways.
 - 3: Break it, mod it, tweak it.
 - 4: Bflag mod: Work in progress
-- 5: Known isue on keku's maps: Fixed ticket rate, this is a nice WIP..
+- 5: Known isue on keku's maps: Fixed ticket rate, this is a nice WIP to do..

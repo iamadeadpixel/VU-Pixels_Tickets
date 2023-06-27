@@ -5,28 +5,26 @@ local global_GameModeNameMap = {
 }  
 
 -- Tank Superiority: ticket rate 100% = 200 Tickets
-local TS200_LevelNameMap = {
-	["Levels/XP3_Desert/XP3_Desert"] = "Bandar Desert",
-	["Levels/XP3_Alborz/XP3_Alborz"] = "Alborz Mountains",
-	["Levels/XP3_Shield/XP3_Shield"] = "Armored Shield",
-	["Levels/XP3_Valley/XP3_Valley"] = "Death Valley"
+local Keku_TS200_LevelNameMap = {
+-- Keku's map mod stuff 
+	["Levels/COOP_006/COOP_006"] = "Fire from the Sky"
 } 
 
 -- ------------------------------------------------------------------------------
 
-Events:Subscribe('Level:LoadResources', function(p_LevelName_TS, p_GameMode_TS, p_IsDedicatedServer)
+Events:Subscribe('Level:LoadResources', function(p_LevelName_Keku_TS, p_GameMode_Keku_TS, p_IsDedicatedServer)
 -- Contains ALL GameModemap data
-	local s_GameMode_TS = ServerUtils and ServerUtils:GetCustomGameModeName() or global_GameModeNameMap[p_GameMode_TS] or p_GameMode_TS
+	local s_GameMode_Keku_TS = ServerUtils and ServerUtils:GetCustomGameModeName() or global_GameModeNameMap[p_GameMode_Keku_TS] or p_GameMode_Keku_TS
 
 -- Contains Tank Superiority map data
-	s_LevelName_TS = ServerUtils and ServerUtils:GetCustomMapName() or TS200_LevelNameMap[p_LevelName_TS] or p_LevelName_TS and s_GameMode_TS == "Tank Superiority"
+	s_LevelName_Keku_TS = ServerUtils and ServerUtils:GetCustomMapName() or Keku_TS200_LevelNameMap[p_LevelName_Keku_TS] or p_LevelName_Keku_TS and s_GameMode_Keku_TS == "Tank Superiority"
 
 -- ------------------------------------------------------------------------------
 
-	if (TS200_LevelNameMap[p_LevelName_TS] ~= nill) then
+	if (Keku_TS200_LevelNameMap[p_LevelName_Keku_TS] ~= nill) then
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
-	s_MapData="TS200"
+	s_MapData="Keku_TS200"
 
 	map_tickets_00_04 = Tickets_00_04_TS200
 	map_tickets_05_12 = Tickets_05_12_TS200
@@ -43,7 +41,13 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_TS, p_GameMode_TS, 
 	GameModeCounter_33_48 = math.floor(map_tickets_33_48/2)
 	GameModeCounter_49_64 = math.floor(map_tickets_49_64/2)
 	GameModeCounter_65_128 = math.floor(map_tickets_65_128/2) 
+
 end
+
+-- ------------------------------------------------------------------------------
+
+	local lm = SharedUtils:GetLevelName() 
+--	print('LM Status: '..lm..' - '..p_LevelName_Keku_TS..' ') 
 
 -- ------------------------------------------------------------------------------
 
@@ -56,13 +60,12 @@ end)
 
 -- ------------------------------------------------------------------------------
 
-	local lm = SharedUtils:GetLevelName() 
-	if lm == p_LevelName_TS  and s_GameMode_TS == "Tank Superiority" then
+	if lm == p_LevelName_Keku_TS  and s_GameMode_Keku_TS == "Tank Superiority" then
 
 	local s_MaxPlayersRCON = RCON:SendCommand('vars.maxPlayers')
 	local s_MaxPlayers = tonumber(s_MaxPlayersRCON[2])
 	
-	print(''..s_MapData..': - Reading map data: '..s_LevelName_TS..' - '..s_GameMode_TS..' ')
+	print(''..s_MapData..': - Reading map data: '..s_LevelName_Keku_TS..' - '..s_GameMode_Keku_TS..' ')
 	print(''..s_MapData..': - Reading map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
 	print(''..s_MapData..': - Reading GameMode Counter data '..GameModeCounter_00_04..'% - '..GameModeCounter_05_12..'% - '..GameModeCounter_13_24..'% - '..GameModeCounter_25_32..'% - '..GameModeCounter_33_48..'% - '..GameModeCounter_49_64..'% - '..GameModeCounter_65_128..'% ') 
 	print(''..s_MapData..': - Setting server tickets and GameMode Counter ') 

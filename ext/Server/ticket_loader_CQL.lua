@@ -19,10 +19,6 @@ local CQL_Disabled_LevelNameMap = {
 -- ------------------------------------------------------------------------------
 -- CQL: ticket rate 100% = 400 Tickets
 local CQL400_LevelNameMap = {
--- Keku's map mod stuff 
-	["Levels/SP_Valley/SP_Valley"] = "Rock and a Hard Place",
-
--- Stock  
 	["Levels/MP_001/MP_001"] = "Grand Bazaar",
 	["Levels/MP_011/MP_011"] = "Seine Crossing",
 	["Levels/XP4_FD/XP4_FD"] = "Markaz Monolith",

@@ -12,26 +12,26 @@ local Assault_Disabled_LevelNameMap = {
 
 -- ------------------------------------------------------------------------------
 -- Assault: US 300 / RU 250 Tickets
-local Assault300_250_LevelNameMap = {
+local Assault_300_250_LevelNameMap = {
 	["Levels/XP1_001/XP1_001"] = "Strike at Karkand",
 	["Levels/XP4_Rubble/XP4_Rubble"] = "Talah Market"
 }
 
 -- ------------------------------------------------------------------------------
 -- Assault: US 300 / RU 220 Tickets
-local Assault300_220_LevelNameMap = {
+local Assault_300_220_LevelNameMap = {
 	["Levels/XP1_004/XP1_004"] = "Wake Island"
 }
 
 -- ------------------------------------------------------------------------------
 -- Assault: US 230 / RU 200 Tickets
-local Assault230_200_LevelNameMap = {
+local Assault_230_200_LevelNameMap = {
 	["Levels/XP1_002/XP1_002"] = "Gulf of Oman"
 }
 
 -- ------------------------------------------------------------------------------
 -- Assault: US 200 / RU 250 Tickets
-local Assault200_250_LevelNameMap = {
+local Assault_200_250_LevelNameMap = {
 	["Levels/XP1_003/XP1_003"] = "Sharqi Peninsula"
 }
 
@@ -41,25 +41,25 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_Assault, p_GameMode
 	local s_GameMode_Assault = ServerUtils and ServerUtils:GetCustomGameModeName() or global_GameModeNameMap[p_GameMode_Assault] or p_GameMode_Assault
 
 -- Contains Assault map data
-	local s_LevelName_Assault = ServerUtils and ServerUtils:GetCustomMapName() or Assault300_250_LevelNameMap[p_LevelName_Assault] or Assault300_220_LevelNameMap[p_LevelName_Assault]	or Assault230_200_LevelNameMap[p_LevelName_Assault] or Assault200_250_LevelNameMap[p_LevelName_Assault]	or p_LevelName_Assault and s_GameMode_Assault == "Assault"
+	local s_LevelName_Assault = ServerUtils and ServerUtils:GetCustomMapName() or Assault_300_250_LevelNameMap[p_LevelName_Assault] or Assault_300_220_LevelNameMap[p_LevelName_Assault] or Assault_230_200_LevelNameMap[p_LevelName_Assault] or Assault_200_250_LevelNameMap[p_LevelName_Assault] or p_LevelName_Assault and s_GameMode_Assault == "Assault"
 
 -- Assault Maps Vehicles disabled
 	local d_LevelName = ServerUtils and ServerUtils:GetCustomMapName() or Assault_Disabled_LevelNameMap[p_LevelName_Assault]
 
 -- ------------------------------------------------------------------------------
 
-	if (Assault300_250_LevelNameMap[p_LevelName_Assault] ~= nill) then
+	if (Assault_300_250_LevelNameMap[p_LevelName_Assault] ~= nill) then
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
-	s_MapData="Assault300_250"
+	s_MapData="Assault_300_250"
 
-	map_tickets_00_04 = Tickets_00_04_Assault300_250
-	map_tickets_05_12 = Tickets_05_12_Assault300_250
-	map_tickets_13_24 = Tickets_13_24_Assault300_250
-	map_tickets_25_32 = Tickets_25_32_Assault300_250
-	map_tickets_33_48 = Tickets_33_48_Assault300_250
-	map_tickets_49_64 = Tickets_49_64_Assault300_250
-	map_tickets_65_128 = Tickets_65_128_Assault300_250
+	map_tickets_00_04 = Tickets_00_04_Assault_300_250
+	map_tickets_05_12 = Tickets_05_12_Assault_300_250
+	map_tickets_13_24 = Tickets_13_24_Assault_300_250
+	map_tickets_25_32 = Tickets_25_32_Assault_300_250
+	map_tickets_33_48 = Tickets_33_48_Assault_300_250
+	map_tickets_49_64 = Tickets_49_64_Assault_300_250
+	map_tickets_65_128 = Tickets_65_128_Assault_300_250
 
 	GameModeCounter_00_04 = math.floor(map_tickets_00_04/3)
 	GameModeCounter_05_12 = math.floor(map_tickets_05_12/3)
@@ -71,20 +71,20 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_Assault, p_GameMode
 
 -- ------------------------------------------------------------------------------
 
-	elseif (Assault300_220_LevelNameMap[p_LevelName_Assault] ~= nill) then
+	elseif (Assault_300_220_LevelNameMap[p_LevelName_Assault] ~= nill) then
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
-	s_MapData="Assault300_220"
+	s_MapData="Assault_300_220"
 
-	map_tickets_00_04 = tickets_00_04_Assault300_220
-	map_tickets_05_12 = tickets_05_12_Assault300_220
-	map_tickets_13_24 = tickets_13_24_Assault300_220
-	map_tickets_25_32 = tickets_25_32_Assault300_220
-	map_tickets_33_48 = tickets_33_48_Assault300_220
-	map_tickets_49_64 = tickets_49_64_Assault300_220
-	map_tickets_65_128 = tickets_65_128_Assault300_220
+	map__tickets_00_04 = Tickets_00_04_Assault_300_220
+	map_tickets_05_12 = Tickets_05_12_Assault_300_220
+	map_tickets_13_24 = Tickets_13_24_Assault_300_220
+	map_tickets_25_32 = Tickets_25_32_Assault_300_220
+	map_tickets_33_48 = Tickets_33_48_Assault_300_220
+	map_tickets_49_64 = Tickets_49_64_Assault_300_220
+	map_tickets_65_128 = Tickets_65_128_Assault_300_220
 
-	GameModeCounter_00_04 = math.floor(map_tickets_00_04/3)
+	GameModeCounter_00_04 = math.floor(map__tickets_00_04/3)
 	GameModeCounter_05_12 = math.floor(map_tickets_05_12/3)
 	GameModeCounter_13_24 = math.floor(map_tickets_13_24/3)
 	GameModeCounter_25_32 = math.floor(map_tickets_25_32/3)
@@ -93,18 +93,18 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_Assault, p_GameMode
 	GameModeCounter_65_128 = math.floor(map_tickets_65_128/3)
 
 -- ------------------------------------------------------------------------------
-	elseif (Assault230_200_LevelNameMap[p_LevelName_Assault] ~= nill) then
+	elseif (Assault_230_200_LevelNameMap[p_LevelName_Assault] ~= nill) then
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
-	s_MapData="Assault230_200"
+	s_MapData="Assault_230_200"
 
-	map_tickets_00_04 = tickets_00_04_Assault230_200
-	map_tickets_05_12 = tickets_05_12_Assault230_200
-	map_tickets_13_24 = tickets_13_24_Assault230_200
-	map_tickets_25_32 = tickets_25_32_Assault230_200
-	map_tickets_33_48 = tickets_33_48_Assault230_200
-	map_tickets_49_64 = tickets_49_64_Assault230_200
-	map_tickets_65_128 = tickets_65_128_Assault230_200
+	map_tickets_00_04 = Tickets_00_04_Assault_230_200
+	map_tickets_05_12 = Tickets_05_12_Assault_230_200
+	map_tickets_13_24 = Tickets_13_24_Assault_230_200
+	map_tickets_25_32 = Tickets_25_32_Assault_230_200
+	map_tickets_33_48 = Tickets_33_48_Assault_230_200
+	map_tickets_49_64 = Tickets_49_64_Assault_230_200
+	map_tickets_65_128 = Tickets_65_128_Assault_230_200
 
 	GameModeCounter_00_04 = math.floor(map_tickets_00_04/2.3)
 	GameModeCounter_05_12 = math.floor(map_tickets_05_12/2.3)
@@ -115,18 +115,18 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_Assault, p_GameMode
 	GameModeCounter_65_128 = math.floor(map_tickets_65_128/2.3)
 
 -- ------------------------------------------------------------------------------
-	elseif (Assault200_250_LevelNameMap[p_LevelName_Assault] ~= nill) then
+	elseif (Assault_200_250_LevelNameMap[p_LevelName_Assault] ~= nill) then
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
-	s_MapData="Assault200_250"
+	s_MapData="Assault_200_250"
 
-	map_tickets_00_04 = Tickets_00_04_Assault200_250
-	map_tickets_05_12 = Tickets_05_12_Assault200_250
-	map_tickets_13_24 = Tickets_13_24_Assault200_250
-	map_tickets_25_32 = Tickets_25_32_Assault200_250
-	map_tickets_33_48 = Tickets_33_48_Assault200_250
-	map_tickets_49_64 = Tickets_49_64_Assault200_250
-	map_tickets_65_128 = Tickets_65_128_Assault200_250
+	map_tickets_00_04 = Tickets_00_04_Assault_200_250
+	map_tickets_05_12 = Tickets_05_12_Assault_200_250
+	map_tickets_13_24 = Tickets_13_24_Assault_200_250
+	map_tickets_25_32 = Tickets_25_32_Assault_200_250
+	map_tickets_33_48 = Tickets_33_48_Assault_200_250
+	map_tickets_49_64 = Tickets_49_64_Assault_200_250
+	map_tickets_65_128 = Tickets_65_128_Assault_200_250
 
 	GameModeCounter_00_04 = math.floor(map_tickets_00_04/2)
 	GameModeCounter_05_12 = math.floor(map_tickets_05_12/2)

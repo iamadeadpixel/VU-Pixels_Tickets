@@ -1,52 +1,53 @@
 -- ------------------------------------------------------------------------------
 
+-- Global GameMode data
 local global_GameModeNameMap = {
-	["TankSuperiority0"] = "Tank Superiority"
-}  
-
--- Tank Superiority: ticket rate 100% = 200 Tickets
-local TS200_LevelNameMap = {
-	["Levels/XP3_Desert/XP3_Desert"] = "Bandar Desert",
-	["Levels/XP3_Alborz/XP3_Alborz"] = "Alborz Mountains",
-	["Levels/XP3_Shield/XP3_Shield"] = "Armored Shield",
-	["Levels/XP3_Valley/XP3_Valley"] = "Death Valley"
-} 
+	["AirSuperiority0"] = "Air Superiority"
+	} 
 
 -- ------------------------------------------------------------------------------
 
-Events:Subscribe('Level:LoadResources', function(p_LevelName_TS, p_GameMode_TS, p_IsDedicatedServer)
+-- Air Superiority: ticket rate 100% = 250 Tickets
+local Keku_AS250_LevelNameMap = {
+-- Keku's map mod stuff 
+	["Levels/XP2_Skybar/XP2_Skybar"] = "Ziba Tower"
+}
+
+-- ------------------------------------------------------------------------------
+
+Events:Subscribe('Level:LoadResources', function(p_LevelName_Keku_AS, p_GameMode_Keku_AS, p_IsDedicatedServer)
 -- Contains ALL GameModemap data
-	local s_GameMode_TS = ServerUtils and ServerUtils:GetCustomGameModeName() or global_GameModeNameMap[p_GameMode_TS] or p_GameMode_TS
+	local s_GameMode_Keku_AS = ServerUtils and ServerUtils:GetCustomGameModeName() or global_GameModeNameMap[p_GameMode_Keku_AS] or p_GameMode_Keku_AS
 
--- Contains Tank Superiority map data
-	s_LevelName_TS = ServerUtils and ServerUtils:GetCustomMapName() or TS200_LevelNameMap[p_LevelName_TS] or p_LevelName_TS and s_GameMode_TS == "Tank Superiority"
+-- Contains Air Superiority map data
+	s_LevelName_Keku_AS = ServerUtils and ServerUtils:GetCustomMapName() or Keku_AS250_LevelNameMap[p_LevelName_Keku_AS] or p_LevelName_Keku_AS and s_GameMode_Keku_AS == "Air Superiority"
 
 -- ------------------------------------------------------------------------------
 
-	if (TS200_LevelNameMap[p_LevelName_TS] ~= nill) then
+	if (Keku_AS250_LevelNameMap[p_LevelName_Keku_AS] ~= nill) then
 	s_vehicles = "true"
 	s_vehicles_status = "Enabled"
-	s_MapData="TS200"
+	s_MapData="Keku_AS250"
 
-	map_tickets_00_04 = Tickets_00_04_TS200
-	map_tickets_05_12 = Tickets_05_12_TS200
-	map_tickets_13_24 = Tickets_13_24_TS200
-	map_tickets_25_32 = Tickets_25_32_TS200
-	map_tickets_33_48 = Tickets_33_48_TS200
-	map_tickets_49_64 = Tickets_49_64_TS200
-	map_tickets_65_128 = Tickets_65_128_TS200
+	map_tickets_00_04 = Tickets_00_04_AS250
+	map_tickets_05_12 = Tickets_05_12_AS250
+	map_tickets_13_24 = Tickets_13_24_AS250
+	map_tickets_25_32 = Tickets_25_32_AS250
+	map_tickets_33_48 = Tickets_33_48_AS250
+	map_tickets_49_64 = Tickets_49_64_AS250
+	map_tickets_65_128 = Tickets_65_128_AS250
 
-	GameModeCounter_00_04 = math.floor(map_tickets_00_04/2)
-	GameModeCounter_05_12 = math.floor(map_tickets_05_12/2)
-	GameModeCounter_13_24 = math.floor(map_tickets_13_24/2)
-	GameModeCounter_25_32 = math.floor(map_tickets_25_32/2)
-	GameModeCounter_33_48 = math.floor(map_tickets_33_48/2)
-	GameModeCounter_49_64 = math.floor(map_tickets_49_64/2)
-	GameModeCounter_65_128 = math.floor(map_tickets_65_128/2) 
+	GameModeCounter_00_04 = math.floor(map_tickets_00_04/2.5)
+	GameModeCounter_05_12 = math.floor(map_tickets_05_12/2.5)
+	GameModeCounter_13_24 = math.floor(map_tickets_13_24/2.5)
+	GameModeCounter_25_32 = math.floor(map_tickets_25_32/2.5)
+	GameModeCounter_33_48 = math.floor(map_tickets_33_48/2.5)
+	GameModeCounter_49_64 = math.floor(map_tickets_49_64/2.5)
+	GameModeCounter_65_128 = math.floor(map_tickets_65_128/2.5)
+
 end
 
 -- ------------------------------------------------------------------------------
-
 -- What ever it is what this do.
 	Events:Subscribe('Level:LoadingInfo', function(screenInfo)
 	if screenInfo ~= "Registering entity resources" then
@@ -57,12 +58,12 @@ end)
 -- ------------------------------------------------------------------------------
 
 	local lm = SharedUtils:GetLevelName() 
-	if lm == p_LevelName_TS  and s_GameMode_TS == "Tank Superiority" then
+	if lm == p_LevelName_Keku_AS  and s_GameMode_Keku_AS == "Air Superiority" then
 
 	local s_MaxPlayersRCON = RCON:SendCommand('vars.maxPlayers')
 	local s_MaxPlayers = tonumber(s_MaxPlayersRCON[2])
 	
-	print(''..s_MapData..': - Reading map data: '..s_LevelName_TS..' - '..s_GameMode_TS..' ')
+	print(''..s_MapData..': - Reading map data: '..s_LevelName_Keku_AS..' - '..s_GameMode_Keku_AS..' ')
 	print(''..s_MapData..': - Reading map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
 	print(''..s_MapData..': - Reading GameMode Counter data '..GameModeCounter_00_04..'% - '..GameModeCounter_05_12..'% - '..GameModeCounter_13_24..'% - '..GameModeCounter_25_32..'% - '..GameModeCounter_33_48..'% - '..GameModeCounter_49_64..'% - '..GameModeCounter_65_128..'% ') 
 	print(''..s_MapData..': - Setting server tickets and GameMode Counter ') 

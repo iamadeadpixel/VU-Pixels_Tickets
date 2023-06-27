@@ -107,7 +107,6 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_Assault2, p_GameMod
 	GameModeCounter_33_48 = math.floor(map_tickets_33_48/2)
 	GameModeCounter_49_64 = math.floor(map_tickets_49_64/2)
 	GameModeCounter_65_128 = math.floor(map_tickets_65_128/2)
-
 	end
 
 -- ------------------------------------------------------------------------------

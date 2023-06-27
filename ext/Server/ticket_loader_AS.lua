@@ -9,10 +9,6 @@ local global_GameModeNameMap = {
 
 -- Air Superiority: ticket rate 100% = 250 Tickets
 local AS250_LevelNameMap = {
--- Keku's map mod stuff 
-	["Levels/XP2_Skybar/XP2_Skybar"] = "Ziba Tower",
-
--- Stock  
 	["Levels/XP5_001/XP5_001"] = "Operation Riverside",
 	["Levels/XP5_002/XP5_002"] = "Nebandan Flats",
 	["Levels/XP5_003/XP5_003"] = "Kiasar Railroad",

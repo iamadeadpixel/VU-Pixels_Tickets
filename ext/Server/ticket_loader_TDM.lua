@@ -7,12 +7,6 @@ local global_GameModeNameMap = {
 -- ------------------------------------------------------------------------------
 -- TDM ticket rate 100% = 100 kills
 local TDM100_LevelNameMap = {
--- Keku's map mod stuff
-	["Levels/COOP_006/COOP_006"] = "Fire from the Sky",
-	["Levels/SP_Jet/SP_Jet"] = "Going Hunting",
-	["Levels/SP_Valley/SP_Valley"] = "Rock and a Hard Place",
-
--- Stock
 	["Levels/MP_001/MP_001"] = "Grand Bazaar",
 	["Levels/MP_003/MP_003"] = "Teheran Highway",
 	["Levels/MP_007/MP_007"] = "Caspian Border",

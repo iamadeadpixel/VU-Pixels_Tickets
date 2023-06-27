@@ -19,12 +19,6 @@ local Rush_Disabled_LevelNameMap = {
 -- ------------------------------------------------------------------------------
 -- Rush: ticket rate 100% = 75 Tickets
 local Rush75_LevelNameMap = {
--- Keku's map mod stuff 
-	["Levels/COOP_006/COOP_006"] = "Fire from the Sky",
-	["Levels/SP_Valley/SP_Valley"] = "Rock and a Hard Place",
-	["Levels/SP_Villa/SP_Villa"] = "Kaffarov's Villa",
-
--- Stock  
 	["Levels/MP_001/MP_001"] = "Grand Bazaar",
 	["Levels/MP_003/MP_003"] = "Teheran Highway",
 	["Levels/MP_007/MP_007"] = "Caspian Border",
