@@ -521,7 +521,7 @@ Tickets_65_128_TDM_CQ = 400 -- Ticket ratio for 65 - 128 players
 -- ---------------------------------------
 
 -- Squad TDM Kill ticket count config.
--- based on a 100% gamemodecounter ,the default ticket rate is 20 kills
+-- based on a 100% gamemodecounter ,the default ticket rate is 50 kills
 -- Kill Tickets for the following maps
 -- Grand Bazaar - Teheran Highway - Caspian Border - Seine Crossing - Operation Firestorm
 -- Damavand Peak - Noshahr Canals - Kharg Island - Operation Metro - Strike at Karkand
