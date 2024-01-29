@@ -1,5 +1,5 @@
 -- Checks if there is a newer version on server startup
---require('UpdateCheck')
+require('UpdateCheck')
 
 -- This is the config where u need to set the tickets for each gamemode.
 require('__init_Tickets_config') -- Edit this if you want your own settings
