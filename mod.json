@@ -1,8 +1,8 @@
 {
-    "Name": "Kinky tickets",
+    "Name": "Custom tickets",
     "Description": "Based on a IllustrisJack's mod",
-    "Version": "1.0.9",
-    "Reason": "Typo fixes on assault maps",
+    "Version": "2.0.1",
+    "Reason": "Fully revamped for Keku's mod",
     "Authors": [ "iamadeadpixel" ],
     "HasVeniceEXT": true,
     "Dependencies": {
