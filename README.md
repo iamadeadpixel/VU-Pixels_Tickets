@@ -1,6 +1,6 @@
 # Based on a mod from IllustrisJack's
 ## VU-Pixels_Tickets
-# V3.0.1
+# V3.0.0
 - Rebuild for the latest Keku all game mode and map mod
 
 - This version has 7 playercount check.
