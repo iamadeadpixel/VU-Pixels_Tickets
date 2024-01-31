@@ -1,6 +1,6 @@
 # Based on a mod from IllustrisJack's
 ## VU-Pixels_Tickets
-# V2.0.1
+# V3.0.1
 - Rebuild for the latest Keku all game mode and map mod
 
 - This version has 7 playercount check.
@@ -12,7 +12,16 @@
 -  49 to 64 players
 -  65 to 128 players
 
-Edit __init_Tickets_config.lua if you want your own ticket ratio settings
+# Edit __init_Tickets_config.lua if you want your own ticket ratio settings
+# the following loaders have the option to enable or disable vehicles
+# to make it more "infantry frienly"
+- ticket_loader_CQL.lua
+- ticket_loader_CQS.lua
+- ticket_loader_CTF.lua
+- ticket_loader_Rush.lua
+- ticket_loader_SQ_Rush.lua
+
+# ticket_loader_TDM.lua on default has vehicles disabled, INC Squad deathmatch
 
 # Disclaimer
 - 1: Do not run any mod or procon plugin that also can change tickers/flags
