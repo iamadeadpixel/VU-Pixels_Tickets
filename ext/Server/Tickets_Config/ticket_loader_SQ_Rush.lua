@@ -1,4 +1,16 @@
 -- ------------------------------------------------------------------------------
+
+Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+    if screenInfo == "Running" or screenInfo == "Blocking on shader creation" then
+		local syncedBFSettings = ResourceManager:GetSettings("SyncedBFSettings")
+		if syncedBFSettings ~= nil then
+			syncedBFSettings = SyncedBFSettings(syncedBFSettings)
+			syncedBFSettings.teamSwitchingAllowed = false
+		end
+	end
+end)
+
+-- ------------------------------------------------------------------------------
 local global_GameModeNameMap = {
 	["SquadRush0"] = "Squad Rush"
 }  
@@ -104,14 +116,6 @@ end
 		s_vehicles = "false"
 	s_vehicles_status = "Disabled"
 end
-
--- ------------------------------------------------------------------------------
--- What ever it is what this do.
-	Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-	if screenInfo ~= "Registering entity resources" then
-	return
-	end
-end)
 
 -- ------------------------------------------------------------------------------
 

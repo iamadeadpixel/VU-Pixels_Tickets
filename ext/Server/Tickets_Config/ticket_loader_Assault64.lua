@@ -1,4 +1,15 @@
 -- ------------------------------------------------------------------------------
+Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+    if screenInfo == "Running" or screenInfo == "Blocking on shader creation" then
+		local syncedBFSettings = ResourceManager:GetSettings("SyncedBFSettings")
+		if syncedBFSettings ~= nil then
+			syncedBFSettings = SyncedBFSettings(syncedBFSettings)
+			syncedBFSettings.teamSwitchingAllowed = false
+		end
+	end
+end)
+
+-- ------------------------------------------------------------------------------
 
 -- Global GameMode data
 local global_GameModeNameMap = {
@@ -107,14 +118,6 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_Assault64, p_GameMo
 	GMC_49_64 = math.floor(map_tickets_49_64/3.5)
 	GMC_65_128 = math.floor(map_tickets_65_128/3.5)
 	end
-
--- ------------------------------------------------------------------------------
--- What ever it is what this do.
-	Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-	if screenInfo ~= "Registering entity resources" then
-	return
-	end
-end)
 
 -- ------------------------------------------------------------------------------
 

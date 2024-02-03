@@ -1,4 +1,16 @@
 -- ------------------------------------------------------------------------------
+
+Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+    if screenInfo == "Running" or screenInfo == "Blocking on shader creation" then
+		local syncedBFSettings = ResourceManager:GetSettings("SyncedBFSettings")
+		if syncedBFSettings ~= nil then
+			syncedBFSettings = SyncedBFSettings(syncedBFSettings)
+			syncedBFSettings.teamSwitchingAllowed = false
+		end
+	end
+end)
+
+-- ------------------------------------------------------------------------------
 -- does NOT support vehicles !
 local global_GameModeNameMap = {
 	["TeamDeathMatch0"] = "TDM",
@@ -102,15 +114,6 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_TDM, p_GameMode_TDM
 	GMC_49_64 = math.floor(map_tickets_49_64/1)
 	GMC_65_128 = math.floor(map_tickets_65_128/1) 
 end
-
--- ------------------------------------------------------------------------------
-
--- What ever it is what this do.
-	Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-	if screenInfo ~= "Registering entity resources" then
-	return
-	end
-end)
 
 -- ------------------------------------------------------------------------------
 

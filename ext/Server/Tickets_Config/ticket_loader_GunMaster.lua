@@ -1,4 +1,15 @@
 -- ------------------------------------------------------------------------------
+Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+    if screenInfo == "Running" or screenInfo == "Blocking on shader creation" then
+		local syncedBFSettings = ResourceManager:GetSettings("SyncedBFSettings")
+		if syncedBFSettings ~= nil then
+			syncedBFSettings = SyncedBFSettings(syncedBFSettings)
+			syncedBFSettings.teamSwitchingAllowed = false
+		end
+	end
+end)
+
+-- ------------------------------------------------------------------------------
 -- Global shared Gun Master GameMode data
 local global_GameModeNameMap = {
 	["GunMaster0"] = "Gun Master",
@@ -55,14 +66,6 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_GunMaster, p_GameMo
 
 -- Contains GunMaster map data
 	s_LevelName_GunMaster = ServerUtils and ServerUtils:GetCustomMapName() or GunMaster_LevelNameMap[p_LevelName_GunMaster] or p_LevelName_GunMaster and s_GameMode_GunMaster == "Gun Master"
-
--- ------------------------------------------------------------------------------
--- What ever it is what this do.
-	Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-	if screenInfo ~= "Registering entity resources" then
-	return
-	end
-end)
 
 -- ------------------------------------------------------------------------------
 

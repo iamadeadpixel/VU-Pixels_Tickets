@@ -1,4 +1,15 @@
 -- ------------------------------------------------------------------------------
+Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+    if screenInfo == "Running" or screenInfo == "Blocking on shader creation" then
+		local syncedBFSettings = ResourceManager:GetSettings("SyncedBFSettings")
+		if syncedBFSettings ~= nil then
+			syncedBFSettings = SyncedBFSettings(syncedBFSettings)
+			syncedBFSettings.teamSwitchingAllowed = false
+		end
+	end
+end)
+
+-- ------------------------------------------------------------------------------
 
 local global_GameModeNameMap = {
 	["CaptureTheFlag0"] = "CTF"
@@ -86,14 +97,6 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_CTF, p_GameMode_CTF
 	GMC_49_64 = math.floor(map_tickets_49_64*34)
 	GMC_65_128 = math.floor(map_tickets_65_128*34)
 end
-
--- ------------------------------------------------------------------------------
--- What ever it is what this do.
-	Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-	if screenInfo ~= "Registering entity resources" then
-	return
-	end
-end)
 
 -- ------------------------------------------------------------------------------
 -- Experimental: Setting vehicles on or off on specific map, any other map should be enabled
