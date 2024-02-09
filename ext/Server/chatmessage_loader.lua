@@ -1,3 +1,4 @@
+	if Config.chatmessages then 
 local announcedPlayers = {}
 
 Events:Subscribe('Player:Respawn', function(player, recipientMask, message,info,yell)
@@ -6,8 +7,6 @@ Events:Subscribe('Player:Respawn', function(player, recipientMask, message,info,
 	if announcedPlayers[player.name] then
 	return
 	end
-
-
 
 	if s_MapData == "Team DeathMatch" or s_MapData == "Team DeathMatch Close Quarters" or s_MapData == "Squad Deathmatch" or s_MapData == "Rush" or s_MapData == "Squad Rush" then
 			m_tickets = " - Kills to make: "
@@ -37,3 +36,4 @@ end)
 Events:Subscribe('Level:Destroy', function()
 announcedPlayers = {}
 end) 
+end

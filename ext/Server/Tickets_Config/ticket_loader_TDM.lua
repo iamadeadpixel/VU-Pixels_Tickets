@@ -131,7 +131,7 @@ end
 
 -- ------------------------------------------------------------------------------
 
-	local players = PlayerManager:GetPlayerCount()
+	 local players = PlayerManager:GetPlayerCount()
 	if players <= 4 then
 	ticket_gmc = GMC_00_04
 	map_tickets = map_tickets_00_04
