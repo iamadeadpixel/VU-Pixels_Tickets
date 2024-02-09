@@ -222,13 +222,10 @@ end
 	
 -- We need to cheat here xD	
 	s_MapData=s_GameMode
-	print(''..s_MapData..': - level data: Mapname:'..s_LevelName..' - GameMode:'..s_GameMode..' ')
-	print(''..s_MapData..': - map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
-	print(''..s_MapData..': - GameMode Counter data '..GMC_00_04..'% - '..GMC_05_12..'% - '..GMC_13_24..'% - '..GMC_25_32..'% - '..GMC_33_48..'% - '..GMC_49_64..'% - '..GMC_65_128..'% ') 
 
 -- ------------------------------------------------------------------------------
 
-	local players = PlayerManager:GetPlayerCount()
+	 local players = PlayerManager:GetPlayerCount()
 	if players <= 4 then
 	ticket_gmc = GMC_00_04
 	map_tickets = map_tickets_00_04
@@ -276,10 +273,18 @@ end
 	RCON:SendCommand('vars.gameModeCounter', { tostring(ticket_gmc) }) 
         RCON:SendCommand('vars.vehicleSpawnAllowed', { tostring(s_vehicles) }) 
 
+	if Config.consolespam then 
+    print("****************** Console spammer ****************"); 
+	print(''..s_MapData..': - level data: Mapname:'..s_LevelName..' - GameMode:'..s_GameMode..' ')
+	print(''..s_MapData..': - map tickets: '..map_tickets_00_04..' - '..map_tickets_05_12..' - '..map_tickets_13_24..' - '..map_tickets_25_32..' - '..map_tickets_33_48..' - '..map_tickets_49_64..' - '..map_tickets_65_128..' ') 
+	print(''..s_MapData..': - GameMode Counter data '..GMC_00_04..'% - '..GMC_05_12..'% - '..GMC_13_24..'% - '..GMC_25_32..'% - '..GMC_33_48..'% - '..GMC_49_64..'% - '..GMC_65_128..'% ') 
+
 	print(''..s_MapData..': - Player count:'..player_count..' players - Max players:'..s_MaxPlayers..' - Current: '..players..' - tickets set to '..map_tickets..' - GameMode Counter '..ticket_gmc..'%')
 	print(''..s_MapData..': - Vehicles are '..s_vehicles_status..' ')  
 	print(''..s_MapData..': - All presets loaded')  
+end
 
 end
 end)
+
 

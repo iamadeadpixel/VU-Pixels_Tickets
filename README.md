@@ -1,6 +1,7 @@
 # Based on a mod from IllustrisJack's
 ## VU-Pixels_Tickets
-# V3.0.1
+# V3.0.2 - 09-02-2024
+- Added the option to turn off the console spam messages also, see config.lua for that
 - option to turn off the chatmessages use a true/false statement in the config.lua
 - Added chatmessages that spams gamemode,levelname and ticket count (on spawn onetime only)
 - Rebuild for the latest Keku all game mode and map mod

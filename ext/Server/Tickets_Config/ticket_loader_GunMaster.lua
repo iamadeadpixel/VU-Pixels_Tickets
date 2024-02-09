@@ -73,11 +73,13 @@ Events:Subscribe('Level:LoadResources', function(p_LevelName_GunMaster, p_GameMo
 	if lm == p_LevelName_GunMaster and s_GameMode_GunMaster == "Gun Master" then
 	s_MapData="Gun Master"
 
+	if Config.consolespam then 
 	print(''..s_MapData..': - Shared GunMaster data')
 	print(''..s_MapData..': - Gamemode: ('..s_GameMode_GunMaster..') - Mapname: ('..s_LevelName_GunMaster..') ') 
 	print(''..s_MapData..': - This Gamemode has its own settings') 
 
 -- ------------------------------------------------------------------------------
+end
 
 end
 end)
