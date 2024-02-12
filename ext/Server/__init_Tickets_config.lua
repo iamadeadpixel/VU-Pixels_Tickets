@@ -3,7 +3,7 @@
 player_counter = {
 	"0 - 4",
 	"5 - 12",
-	"13 - 12",
+	"13 - 24",
 	"25 - 32",
 	"33 - 48",
 	"49 - 64",
@@ -93,12 +93,12 @@ tickets_HS_200 = {
 -- Hit and Run - Kaffarov's Villa - Rock and a Hard Place - Carrier- Aygan Village
 
 	tickets_TDM = {
-	"40", -- Ticket ratio for 0 - 4 players -- Default: 100
-	"80", -- Ticket ratio for 5 - 12 players -- Default: 100
-	"120", -- Ticket ratio for 13 - 24 players -- Default: 100
-	"150", -- Ticket ratio for 25 - 32 players -- Default: 100
-	"200", -- Ticket ratio for 33 - 48 players -- Default: 100
-	"250", -- Ticket ratio for 49 - 64 players -- Default: 100
+	"50", -- Ticket ratio for 0 - 4 players -- Default: 100
+	"100", -- Ticket ratio for 5 - 12 players -- Default: 100
+	"150", -- Ticket ratio for 13 - 24 players -- Default: 100
+	"200", -- Ticket ratio for 25 - 32 players -- Default: 100
+	"250", -- Ticket ratio for 33 - 48 players -- Default: 100
+	"300", -- Ticket ratio for 49 - 64 players -- Default: 100
 	"400" -- Ticket ratio for 65 - 128 players -- Default: 100
 	}
 
@@ -250,13 +250,13 @@ tickets_AS = {
 -- Sabalan Pipeline - Hit and Run - Carrier - Kaffarov's Villa
 
 tickets_Domination = {
-	"50", -- Ticket ratio for 0 - 4 players -- Default: 150
+	"75", -- Ticket ratio for 0 - 4 players -- Default: 150
 	"100", -- Ticket ratio for 5 - 12 players -- Default: 150
 	"150", -- Ticket ratio for 13 - 24 players -- Default: 150
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 150
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 150
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 150
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 150
+	"250", -- Ticket ratio for 25 - 32 players -- Default: 150
+	"350", -- Ticket ratio for 33 - 48 players -- Default: 150
+	"400", -- Ticket ratio for 49 - 64 players -- Default: 150
+	"500" -- Ticket ratio for 65 - 128 players -- Default: 150
 	}
 
 
@@ -284,8 +284,8 @@ tickets_Rush_SQ = {
 	"40", -- Ticket ratio for 5 - 12 players -- Default: 20
 	"60", -- Ticket ratio for 13 - 24 players -- Default: 20
 	"80", -- Ticket ratio for 25 - 32 players -- Default: 20
-	"100", -- Ticket ratio for 33 - 48 players -- Default: 20
-	"150", -- Ticket ratio for 49 - 64 players -- Default: 20
+	"120", -- Ticket ratio for 33 - 48 players -- Default: 20
+	"175", -- Ticket ratio for 49 - 64 players -- Default: 20
 	"200" -- Ticket ratio for 65 - 128 players -- Default: 20
 	}
 
@@ -309,12 +309,12 @@ tickets_Rush_SQ = {
 -- Aygan Village - Rock and a Hard Place
 
 tickets_Rush_75 = {
-	"30", -- Ticket ratio for 0 - 4 players -- Default: 75
-	"50", -- Ticket ratio for 5 - 12 players -- Default: 75
-	"75", -- Ticket ratio for 13 - 24 players -- Default: 75
-	"75", -- Ticket ratio for 25 - 32 players -- Default: 75
-	"100", -- Ticket ratio for 33 - 48 players -- Default: 75
-	"100", -- Ticket ratio for 49 - 64 players -- Default: 75
+	"20", -- Ticket ratio for 0 - 4 players -- Default: 75
+	"40", -- Ticket ratio for 5 - 12 players -- Default: 75
+	"60", -- Ticket ratio for 13 - 24 players -- Default: 75
+	"80", -- Ticket ratio for 25 - 32 players -- Default: 75
+	"120", -- Ticket ratio for 33 - 48 players -- Default: 75
+	"175", -- Ticket ratio for 49 - 64 players -- Default: 75
 	"200" -- Ticket ratio for 65 - 128 players -- Default: 75
 	}
 
@@ -329,12 +329,12 @@ tickets_Rush_75 = {
 -- Operation Metro - Sharqi Peninsula
 
 tickets_Rush_100 = {
-	"30", -- Ticket ratio for 0 - 4 players -- Default: 100
-	"50", -- Ticket ratio for 5 - 12 players -- Default: 100
-	"75", -- Ticket ratio for 13 - 24 players -- Default: 100
-	"75", -- Ticket ratio for 25 - 32 players -- Default: 100
-	"100", -- Ticket ratio for 33 - 48 players -- Default: 100
-	"100", -- Ticket ratio for 49 - 64 players -- Default: 100
+	"20", -- Ticket ratio for 0 - 4 players -- Default: 100
+	"40", -- Ticket ratio for 5 - 12 players -- Default: 100
+	"60", -- Ticket ratio for 13 - 24 players -- Default: 100
+	"80", -- Ticket ratio for 25 - 32 players -- Default: 100
+	"120", -- Ticket ratio for 33 - 48 players -- Default: 100
+	"175", -- Ticket ratio for 49 - 64 players -- Default: 100
 	"200" -- Ticket ratio for 65 - 128 players -- Default: 100
 	}
 
@@ -351,13 +351,13 @@ tickets_Rush_100 = {
 -- Grand Bazaar - Seine Crossing - Markaz Monolith - Azadi Palace - Epicenter
 
 tickets_CQL400 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 400
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 400
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 400
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 400
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 400
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 400
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 400
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 400
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 400
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 400
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 400
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 400
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 400
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 400
 	}
 
 
@@ -370,13 +370,13 @@ tickets_CQL400 = {
 -- Operation Metro - Gulf of Oman
 
 tickets_CQL350 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 350
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 350
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 350
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 350
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 350
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 350
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 350
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 350
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 350
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 350
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 350
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 350
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 350
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 350
 	}
 
 
@@ -394,13 +394,13 @@ tickets_CQL350 = {
  -- Rock and a Hard Place
 
 tickets_CQL300 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 300
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 300
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 300
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 300
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 300
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 300
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 300
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 300
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 300
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 300
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 300
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 300
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 300
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 300
 	}
 
 
@@ -413,13 +413,13 @@ tickets_CQL300 = {
 -- Alborz Mountains
 
 tickets_CQL250 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 250
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 250
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 250
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 250
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 250
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 250
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 250
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 250
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 250
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 250
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 250
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 250
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 250
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 250
 	}
 
 
@@ -433,13 +433,13 @@ tickets_CQL250 = {
 -- Operation Riverside - Nebandan Flats
 
 tickets_CQL200 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 200
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 200
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 200
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 200
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 200
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 200
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 200
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 200
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 200
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 200
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 200
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 200
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 200
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 200
 	}
 
 
@@ -455,13 +455,13 @@ tickets_CQL200 = {
 -- Operation Metro
 
 tickets_CQS350 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 350
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 350
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 350
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 350
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 350
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 350
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 350
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 350
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 350
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 350
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 350
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 350
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 350
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 350
 	}
 
 
@@ -474,13 +474,13 @@ tickets_CQS350 = {
 -- Gulf of Oman
 
 tickets_CQS300 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 300
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 300
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 300
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 300
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 300
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 300
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 300
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 300
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 300
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 300
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 300
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 300
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 300
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 300
 	}
 
 
@@ -494,13 +494,13 @@ tickets_CQS300 = {
 -- Alborz Mountains - Markaz Monolith - Azadi Palace - Epicenter
 
 tickets_CQS250 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 250
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 250
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 250
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 250
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 250
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 250
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 250
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 250
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 250
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 250
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 250
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 250
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 250
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 250
 	}
 
 
@@ -517,13 +517,13 @@ tickets_CQS250 = {
 -- Aygan Village
 
 tickets_CQS200 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 200
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 200
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 200
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 200
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 200
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 200
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 200
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 200
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 200
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 200
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 200
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 200
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 200
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 200
 	}
 
 
@@ -535,13 +535,13 @@ tickets_CQS200 = {
 -- Caspian Border
 
 tickets_CQS150 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 150
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 150
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 150
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 150
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 150
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 150
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 150
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 150
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 150
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 150
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 150
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 150
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 150
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 150
 	}
 
 
@@ -560,13 +560,13 @@ tickets_CQS150 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault_300 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 300
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 300
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 300
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 300
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 300
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 300
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 300
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 300
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 300
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 300
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 300
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 300
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 300
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 300
 	}
 
 
@@ -582,13 +582,13 @@ tickets_Assault_300 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault_300_Wake = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 300
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 300
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 300
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 300
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 300
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 300
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 300
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 300
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 300
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 300
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 300
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 300
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 300
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 300
 	}
 
 
@@ -604,13 +604,13 @@ tickets_Assault_300_Wake = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault_230 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 230
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 230
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 230
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 230
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 230
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 230
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 230
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 230
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 230
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 230
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 230
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 230
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 230
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 230
 	}
 
 
@@ -625,13 +625,13 @@ tickets_Assault_230 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault_250 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 250
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 250
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 250
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 250
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 250
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 250
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 250
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 250
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 250
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 250
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 250
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 250
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 250
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 250
 	}
 
 
@@ -650,13 +650,13 @@ tickets_Assault_250 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault2_400 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 400
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 400
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 400
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 400
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 400
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 400
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 400
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 400
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 400
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 400
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 400
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 400
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 400
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 400
 	}
 
 
@@ -672,13 +672,13 @@ tickets_Assault2_400 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault2_250 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 250
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 250
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 250
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 250
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 250
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 250
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 250
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 250
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 250
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 250
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 250
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 250
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 250
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 250
 	}
 
 
@@ -694,13 +694,13 @@ tickets_Assault2_250 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault2_220 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 220
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 220
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 220
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 220
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 220
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 220
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 220
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 220
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 220
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 220
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 220
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 220
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 220
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 220
 	}
 
 
@@ -719,13 +719,13 @@ tickets_Assault2_220 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault64_400_350 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 400
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 400
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 400
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 400
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 400
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 400
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 400
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 400
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 400
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 400
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 400
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 400
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 400
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 400
 	}
 
 
@@ -741,13 +741,13 @@ tickets_Assault64_400_350 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault64_400_300 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 400
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 400
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 400
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 400
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 400
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 400
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 400
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 400
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 400
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 400
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 400
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 400
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 400
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 400
 	}
 
 
@@ -763,11 +763,11 @@ tickets_Assault64_400_300 = {
 -- Tickets are for Atackers (Orange) - Blue drains orange
 
 tickets_Assault64_350_300 = {
-	"70", -- Ticket ratio for 0 - 4 players -- Default: 350
-	"100", -- Ticket ratio for 5 - 12 players -- Default: 350
-	"150", -- Ticket ratio for 13 - 24 players -- Default: 350
-	"200", -- Ticket ratio for 25 - 32 players -- Default: 350
-	"250", -- Ticket ratio for 33 - 48 players -- Default: 350
-	"300", -- Ticket ratio for 49 - 64 players -- Default: 350
-	"400" -- Ticket ratio for 65 - 128 players -- Default: 350
+	"150", -- Ticket ratio for 0 - 4 players -- Default: 350
+	"200", -- Ticket ratio for 5 - 12 players -- Default: 350
+	"300", -- Ticket ratio for 13 - 24 players -- Default: 350
+	"500", -- Ticket ratio for 25 - 32 players -- Default: 350
+	"550", -- Ticket ratio for 33 - 48 players -- Default: 350
+	"750", -- Ticket ratio for 49 - 64 players -- Default: 350
+	"800" -- Ticket ratio for 65 - 128 players -- Default: 350
 	}
