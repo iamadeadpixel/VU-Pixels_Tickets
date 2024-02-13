@@ -1,8 +1,8 @@
 {
     "Name": "Custom tickets",
     "Description": "Based on a IllustrisJack's mod",
-    "Version": "3.0.2",
-    "Reason": "More config tweaks",
+    "Version": "3.0.3",
+    "Reason": "minor config tweaks for the map ticket loader",
     "Authors": [ "iamadeadpixel" ],
     "HasVeniceEXT": true,
     "Dependencies": {
