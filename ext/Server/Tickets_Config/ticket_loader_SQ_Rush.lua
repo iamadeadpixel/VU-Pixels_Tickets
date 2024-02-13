@@ -18,12 +18,12 @@ local global_GameModeNameMap = {
 -- ------------------------------------------------------------------------------
 -- Squad Rush Maps Vehicles disabled:
 local Rush_SQ_Disabled_LevelNameMap = {
-	["Levels/MP_001/MP_001"] = "Grand Bazaar",
-	["Levels/MP_011/MP_011"] = "Seine Crossing",
-	["Levels/XP4_FD/XP4_FD"] = "Markaz Monolith",
-	["Levels/MP_017/MP_017"] = "Noshahr Canals",
-	["Levels/MP_003/MP_003"] = "Teheran Highway",
-	["Levels/MP_Subway/MP_Subway"] = "Operation Metro"
+--	["Levels/MP_001/MP_001"] = "Grand Bazaar",
+--	["Levels/MP_011/MP_011"] = "Seine Crossing",
+--	["Levels/XP4_FD/XP4_FD"] = "Markaz Monolith",
+--	["Levels/MP_017/MP_017"] = "Noshahr Canals",
+--	["Levels/MP_003/MP_003"] = "Teheran Highway",
+--	["Levels/MP_Subway/MP_Subway"] = "Operation Metro"
 }
 
 -- ------------------------------------------------------------------------------

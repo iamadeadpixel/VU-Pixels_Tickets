@@ -17,6 +17,7 @@ local global_GameModeNameMap = {
 
 -- CTF Maps Vehicles disabled:
 local CTF_Disabled_LevelNameMap = {
+--	["Levels/XP5_003/XP5_003"] = "Kiasar Railroad"
 
 }
 
