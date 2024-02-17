@@ -6,8 +6,7 @@ Events:Subscribe('Player:Respawn', function(player, recipientMask, message,info,
 	return
 	end
 
-	
-	
+	--
 
 		local players = PlayerManager:GetPlayerCount()
 	ChatManager:SendMessage(("Gamemode:" ..m_GameMode ), player ) 
@@ -19,24 +18,33 @@ Events:Subscribe('Player:Respawn', function(player, recipientMask, message,info,
 
 end)
 
+--
+
 	Events:Subscribe('Player:Left', function(player)
-	print("**** Removing player from table ****"); 
-	for announcedPlayers ,key in ipairs(announcedPlayers) do
-	print(key, announcedPlayers)
---	table.remove(key, announcedPlayers);
+		announcedPlayers[player.name] = false -- Removing the player Id from the announcedPlayerIds table
 
-end
-end) 
+	end) 
 
-Events:Subscribe('Server:RoundReset', function(player)
-print("**** Restarting round ****"); 
+--
+
+	Events:Subscribe('Server:RoundReset', function()
+	print("**** Restarting round ****"); 
+	local oldMemory = collectgarbage("count")
+collectgarbage('collect')
+print("*Collecting Garbage on Level reload: " .. collectgarbage("count") .. " KB | Old Memory: " .. oldMemory .. " KB")
+
 end)
 
+--
 
 	Events:Subscribe('Level:Destroy', function()
 	announcedPlayers = {}
-	print("**** Destroying player table ****"); 
-	end) 
+
+	local oldMemory = collectgarbage("count")
+	collectgarbage('collect')
+	print("*Collecting Garbage on Level Destroy: " .. collectgarbage("count") .. " KB | Old Memory: " .. oldMemory .. " KB")
+
+end) 
 
 end
 
