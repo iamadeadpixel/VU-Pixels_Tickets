@@ -1,6 +1,12 @@
 # Based on a ticket mod from IllustrisJack
 ## VU-Pixels_Tickets
 
+# V4.0.1 - 17-02-2024
+- Fix for the chat messages
+- When a player disconects/crashes, and joins again
+- The player did not get the messages again.
+- fix when forwarding to a new map, new info was not send in chat.
+
 # V4.0.0 - 16-02-2024
 - Complete rewrite of the mod, it had some nasty isues with disabled vehicles stuff
 - code clean up.

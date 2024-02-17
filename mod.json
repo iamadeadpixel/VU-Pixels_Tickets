@@ -1,8 +1,8 @@
 {
     "Name": "Custom tickets",
     "Description": "Based on a IllustrisJack's mod",
-    "Version": "4.0.0",
-    "Reason": "FULL revamp",
+    "Version": "4.0.1",
+    "Reason": "message fix",
     "Authors": [ "iamadeadpixel" ],
     "HasVeniceEXT": true,
     "Dependencies": {
