@@ -10,7 +10,7 @@ s_update = ("VU-Pixels_Tickets seems to be out of date!")
 
 -- Make sure this point on github to your mod.json file !
 -- Example: s_githublink = ("https://raw.githubusercontent.com/-username-/-modname-/main/mod.json") 
-s_githublink = ("https://raw.githubusercontent.com/iamadeadpixel/VU-Pixels_Tickets")
+s_githublink = ("https://github.com/iamadeadpixel/VU-Pixels_Tickets")
 		 
 
 function getCurrentVersion()
