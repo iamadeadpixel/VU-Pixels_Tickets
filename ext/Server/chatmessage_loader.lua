@@ -22,28 +22,18 @@ end)
 
 	Events:Subscribe('Player:Left', function(player)
 		announcedPlayers[player.name] = false -- Removing the player Id from the announcedPlayerIds table
-
 	end) 
 
 --
 
 	Events:Subscribe('Server:RoundReset', function()
 	print("**** Restarting round ****"); 
-	local oldMemory = collectgarbage("count")
-collectgarbage('collect')
-print("*Collecting Garbage on Level reload: " .. collectgarbage("count") .. " KB | Old Memory: " .. oldMemory .. " KB")
-
 end)
 
 --
 
 	Events:Subscribe('Level:Destroy', function()
 	announcedPlayers = {}
-
-	local oldMemory = collectgarbage("count")
-	collectgarbage('collect')
-	print("*Collecting Garbage on Level Destroy: " .. collectgarbage("count") .. " KB | Old Memory: " .. oldMemory .. " KB")
-
 end) 
 
 end
